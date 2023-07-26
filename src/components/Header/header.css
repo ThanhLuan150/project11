@@ -1,0 +1,182 @@
+
+
+.header {
+    position: fixed;
+    font-family: Verdana, Tahoma, sans-serif;
+    display: flex;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+
+}
+
+
+
+.header .ul-nav .li-nav a:hover {
+    color: #cd9a2b;
+    
+}
+.header .ul-nav {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    margin: 0;
+}
+
+.header .ul-nav .li-nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header .ul-nav .li-nav:hover #type-movies {
+    display: block;
+    list-style-type:none;
+}
+
+
+.header.menu.active {
+    display: block;
+}
+
+.header #type-movies {
+    /* display: inline-block; */
+    position: absolute;
+    left: -3rem;
+    top: 2rem;
+    display: none;
+    margin-top: 3.95rem;
+}
+
+.movie_card{
+    margin-top: 1rem;
+    position: absolute;
+    width: 20rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.movie_item {
+    padding: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 57%;
+    grid-gap: 3%;
+}
+
+.movie_img > img{
+    width: 8rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.movie_info{
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.movie_info a:hover {
+    color: red;
+    text-decoration: none;
+}
+#checkbox{
+    display: none;
+}
+.li-drop{
+   background-color: #fff;
+   
+}
+.search{
+    border:1px solid #cd9a2b;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+    #checkbox {
+            display: none;
+        }
+    .header .ul-nav .li-nav {
+       display: block;
+    }
+    .firstnav{
+        margin-top: 3.5rem;
+    }
+    .header .ul-nav .li-nav{
+       padding: 0.5rem;
+    }
+    
+    .header .ul-nav {
+        width: 100%;
+        top: 6rem;
+        height: 100vh;
+        background-color: #fff;
+        right: -100%;
+        position: absolute;
+        display: block;
+        margin: 0;
+        padding: 0;
+        transition: all 0.5s;
+    }
+
+    .header #type-movies {
+        display: none;
+        right: -1rem;
+        top: -0.2rem;
+        margin: 2rem;
+    }
+.header #type-movies:hover{
+        display: block;
+    }
+
+
+    .check-btn-res{
+        position: absolute;
+        font-size: 30px;
+        color: aliceblue;
+        right: 7%;
+        transition: 0.5s;
+    }
+    #checkbox:checked ~.ul-nav {
+        right: 0;
+    }
+
+    #checkbox:checked~.check-btn-res {
+        transform: rotate(90deg);
+        transition: 0.5s;
+    }
+
+    .li-drop{
+        background-color: unset;
+        padding: 0;
+        margin: 2px 0 0;
+    }
+    .search_site{
+        top: 1rem;
+        position: absolute;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+    }
+    .auth{
+        position: absolute;
+        top: 11rem;
+        left: 0;
+        right: 0;
+        width: 100px;
+    }
+}
+
+@media (min-width: 1300px){
+    .check-btn-res{
+        display: none;
+    }
+    
+}
+.li-nav1{
+
+}
