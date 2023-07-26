@@ -1,3 +1,4 @@
+import DouleRoom from "./Double room";
 import SingleRoom from "./single room";
 
 const Room = ()=>{ 
@@ -6,6 +7,7 @@ const Room = ()=>{
         <>
         <div className="bg-[#f8f9fa] py-6">
             <SingleRoom/>
+            <DouleRoom/>
         </div>
 
         </>
