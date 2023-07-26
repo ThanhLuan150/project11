@@ -139,7 +139,9 @@ const Cuisine = ()=>{
                         <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">50.000đ <del className='text-[#98a4a9] text-[14px]'>60.000đ</del></div>
                     </div>
                 </div>
-            </div></div>}
+            </div>
+            <div className="bg-[#cd9a2b] text-[15px] flex justify-center uppercase  text-white w-max tracking-wider py-4 px-7 text-sm font-semibold cursor-pointer hover:bg-opacity-80 my-3">Xem thêm</div>
+            </div>}
             {showContent2 && <div><div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-7 gap-5">
                <div className="bg-white drop-shadow-md relative group">
                     <div className="">
@@ -241,8 +243,11 @@ const Cuisine = ()=>{
                         <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">60.000đ </div>
                     </div>
                 </div>
-            </div></div>}
-            {showContent3 && <div><div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-7 gap-5">
+            </div>
+            <div className="bg-[#cd9a2b] text-[15px] flex justify-center uppercase  text-white w-max tracking-wider py-4 px-7 text-sm font-semibold cursor-pointer hover:bg-opacity-80 my-3">Xem thêm</div>
+            </div>}
+            {showContent3 && <div>
+            <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-7 gap-5">
                <div className="bg-white drop-shadow-md relative group">
                     <div className="">
                         <img className="w-full h-full " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/sp102858740354840a88b225a87336.jpg?v=1670338552667"></img>
@@ -343,8 +348,11 @@ const Cuisine = ()=>{
                         <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">60.000đ </div>
                     </div>
                 </div>
-            </div></div>}
             </div>
+            <div className="bg-[#cd9a2b] text-[15px] flex justify-center uppercase  text-white w-max tracking-wider py-4 px-7 text-sm font-semibold cursor-pointer hover:bg-opacity-80 my-3">Xem thêm</div>
+        </div>}
+        </div>
+
         </div>
             
         
