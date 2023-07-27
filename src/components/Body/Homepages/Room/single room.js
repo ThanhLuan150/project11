@@ -20,7 +20,7 @@ const SingleRoom = ()=>{
                         </div>
                         <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
                         <div className="w-[120px] border-[0.5px] border-gray-600"></div>
-                        <div className="flex text-center gap-3 text-sm">
+                        <div className="flex text-center  gap-3 text-sm">
                             <div>02 Khách </div>
                             <div>25m²</div>
                         </div>
