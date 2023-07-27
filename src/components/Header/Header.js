@@ -18,7 +18,7 @@ const Header = () => {
             />
           </a>
         </div>
-        <ul className='ul-nav md:text-[14px] text-[16px] ' id='ul-nav'>
+        <ul className='ul-nav md:text-[14px] text-[16px] w-full ' id='ul-nav'>
           <li className='li-nav firstnav p-6 text-center'>
             <a href="/">Trang chủ</a>
           </li>
@@ -51,7 +51,7 @@ const Header = () => {
             </ul>
           </li>
           <li className='li-nav firstnav p-6 text-center'>
-            <a href="/">Dịch vụ</a>
+            <a href="/Service">Dịch vụ</a>
           </li>
           <li className='li-nav p-6 text-center'>
             <div className="search_site" style={{ display: 'flex' }}>
