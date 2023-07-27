@@ -15,10 +15,10 @@ const Login = ()=>{
                                 <input className="border border-[#e1e1e1] box-shadow outline-none py-2 w-full pl-4 placeholder:text-[14px] placeholder:text-[#333] placeholder:font-mono" type="text"name="" placeholder="Email" ></input>
                             </div>
                             <div className="px-2 pb-3">
-                                <input className="border border-[#e1e1e1] box-shadow outline-none py-2 w-full pl-4 placeholder:text-[14px] placeholder:text-[#333] placeholder:font-mono" type="text"name="" placeholder="Password" ></input>
+                                <input className="border border-[#e1e1e1] box-shadow outline-none py-2 w-full pl-4 placeholder:text-[14px] placeholder:text-[#333] placeholder:font-mono" type="password"name="" placeholder="Password" ></input>
                             </div>
                             <div className="px-2 pb-3">
-                                <input className="border border-[#e1e1e1] box-shadow outline-none py-2 w-full pl-4 placeholder:text-[14px] placeholder:text-[#333] placeholder:font-mono" type="text"name="" placeholder="ConfilmPassword" ></input>
+                                <input className="border border-[#e1e1e1] box-shadow outline-none py-2 w-full pl-4 placeholder:text-[14px] placeholder:text-[#333] placeholder:font-mono" type="password"name="" placeholder="ConfilmPassword" ></input>
                             </div>
                             <div className="px-2 pb-3 ">
                                 <button type="button" className="w-full h-full text-center items-center py-3 pb-4 bg-[#cd9a2b] rounded-lg border hover:border-[#cd9a2b] hover:bg-white transition duration-500 hover:text-[#cd9a2b] uppercase text-white text-[14px]  font-mono">Đăng nhập</button>
