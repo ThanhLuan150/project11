@@ -23,7 +23,7 @@ const Header = () => {
             <a href="/">Trang chủ</a>
           </li>
           <li className='li-nav p-6 text-center'>
-            <a href="/">Về chúng tôi</a>
+            <a href="/Aboutus">Về chúng tôi</a>
           </li>
           <li className='li-nav p-6 text-center' style={{ position: "relative" }}>
             <a href="#">Phòng</a>
