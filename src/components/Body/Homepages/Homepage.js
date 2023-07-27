@@ -4,6 +4,7 @@ import IntroduceHotel from "./IntroduceHotel";
 import Room from "./Room/Room";
 import Cuisine from "./Cuisine/Cuisine";
 import Service from "./Information/Service";
+import KnowledHotel from "./KnowlegeHotel";
 const Homepage = ()=>{ 
     return(
         
@@ -14,6 +15,7 @@ const Homepage = ()=>{
           <Room/>
           <Cuisine/>
           <Service/>
+          <KnowledHotel/>
         </>
     )
 }
