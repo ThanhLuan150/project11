@@ -9,6 +9,7 @@ const Header = () => {
         <label htmlFor="checkbox" className='check-btn-res'>
           <i className='fas fa-bars'></i>
         </label>
+      
         <div style={{ whiteSpace: "nowrap" }}>
           <a href='/' style={{ textDecoration: "none" }}>
             <img
@@ -27,6 +28,10 @@ const Header = () => {
           </li>
           <li className='li-nav p-6 text-center' style={{ position: "relative" }}>
             <a href="/VipRoom">Phòng</a>
+              <input type='checkbox' id="checkbox1"></input>
+              <label htmlFor="checkbox1" className='check-btn-res1'>
+                <i class="fa-solid fa-plus"></i>
+            </label>
             <ul id="type-movies">
               <li className='li-nav li-drop '>
                 <a href="/Single" >Phòng đơn</a>
@@ -41,9 +46,13 @@ const Header = () => {
           </li>
           <li className='li-nav p-6 text-center' style={{ position: "relative" }}>
             <a href="/ListCuisine">Ẩm thực</a>
-            <ul id="type-movies">
+            <input type='checkbox' id="checkbox2"></input>
+            <label htmlFor="checkbox2" className='check-btn-res2'>
+              <i className="fa-solid fa-plus rotate-90"></i>
+            </label>
+            <ul id="type-food">
               <li className='li-nav li-drop'>
-                <a href="/Food">Đồ ăn </a>
+                <a href="/Food">Đồ ăn</a>
               </li>
               <li className='li-nav li-drop'>
                 <a href="/Fruit">Nước uống</a>
@@ -53,6 +62,7 @@ const Header = () => {
               </li>
             </ul>
           </li>
+
           <li className='li-nav firstnav p-6 text-center'>
             <a href="/Service">Dịch vụ</a>
           </li>
