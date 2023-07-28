@@ -43,7 +43,7 @@ const Header = () => {
             <a href="#">Ẩm thực</a>
             <ul id="type-movies">
               <li className='li-nav li-drop'>
-                <a href="/Playing">Đồ ăn </a>
+                <a href="/Food">Đồ ăn </a>
               </li>
               <li className='li-nav li-drop'>
                 <a href="/Upcoming">Nước uống,ngon</a>
