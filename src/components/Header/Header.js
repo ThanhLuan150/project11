@@ -26,7 +26,7 @@ const Header = () => {
             <a href="/Aboutus">Về chúng tôi</a>
           </li>
           <li className='li-nav p-6 text-center' style={{ position: "relative" }}>
-            <a href="#">Phòng</a>
+            <a href="/VipRoom">Phòng</a>
             <ul id="type-movies">
               <li className='li-nav li-drop '>
                 <a href="/Single" >Phòng đơn</a>
