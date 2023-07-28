@@ -236,7 +236,7 @@ const ListCuisine = ()=>{
                         <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">60.000đ </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
         <Footer/>
         </>
