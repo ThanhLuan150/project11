@@ -8,7 +8,7 @@ const Double = ()=>{
             <div className="bg-[#f5f5f5] py-3 ">
                 <span className="mx-2 text-[#333] text-[14px] font-mono"><a href="/">Trang chủ</a></span>
                 <i className="fa-solid fa-chevron-right mx-2" ></i>
-                <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="#" >Phòng đôi</a></span>
+                <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="/Double" >Phòng đôi</a></span>
             </div>
         </div>
         <div className="md:mx-[100px] mx-[30px] my-8">
