@@ -5,6 +5,7 @@ import Login from "./components/Body/Login/Login";
 import Register from "./components/Body/Register/Register";
 import Aboutus from "./components/Body/Homepages/Menu/About us";
 import Dichvu from "./components/Body/Homepages/Menu/Dichvu";
+import Cake from "./components/Body/Homepages/Menu/ListCuisine/Cake";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Route path="/Register" element={<Register />} />
     <Route path="/Aboutus" element={<Aboutus />} />
     <Route path="/Service" element={<Dichvu />} />
+    <Route path="/Cake" element={<Cake />} />
   </Routes>    
   
   );

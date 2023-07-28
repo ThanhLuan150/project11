@@ -107,6 +107,7 @@
         }
     .header .ul-nav .li-nav {
        display: block;
+       font-weight: 600;
     }
     .firstnav{
         margin-top: 3.5rem;
@@ -116,30 +117,34 @@
     }
     
     .header .ul-nav {
-        width: 100%;
-        top: 6rem;
+        width: 80%;
+        top: 5.2rem;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: #fff;
         right: -100%;
         position: absolute;
         display: block;
         margin: 0;
         padding: 0;
         /* left: 0; */
-        transition: all 0.5s;
+        transition: all 0.8s;
+        font-weight: 700px;
     }
 
     .header #type-movies {
-        display: block;
+        display: none;
         right: -1rem;
         top: -0.2rem;
         margin: 2rem;
+    }
+    .header #type-movies:hover{ 
+        display: block;
     }
 
     .check-btn-res{
         position: absolute;
         font-size: 30px;
-        color: aliceblue;
+        color: #000000;
         right: 7%;
         transition: 0.5s;
     }
@@ -155,7 +160,7 @@
     .li-drop{
         background-color: unset;
         padding: 0;
-        margin: 2px 0 0;
+        margin: 5px 0 0;
     }
     .search_site{
         top: 1rem;
