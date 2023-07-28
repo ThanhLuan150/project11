@@ -9,6 +9,7 @@ import Cake from "./components/Body/Homepages/Menu/ListCuisine/Cake";
 import Food from "./components/Body/Homepages/Menu/ListCuisine/Food";
 import Fruit from "./components/Body/Homepages/Menu/ListCuisine/Fruit";
 import Single from "./components/Body/Homepages/Menu/ListRoom/Single";
+import Double from "./components/Body/Homepages/Menu/ListRoom/Double";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
     <Route path="/Food" element={<Food/>} />
     <Route path="/Fruit" element={<Fruit/>} />
     <Route path="/Single" element={<Single/>} />
+    <Route path="/Double" element={<Double/>} />
   </Routes>    
   
   );
