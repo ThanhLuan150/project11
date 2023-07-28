@@ -35,7 +35,7 @@ const Header = () => {
                 <a href="/Double">Phòng đôi</a>
               </li>
               <li className='li-nav li-drop'>
-                <a href="/Upcoming">Phòng Vip</a>
+                <a href="/Vip">Phòng Vip</a>
               </li>
             </ul>
           </li>
