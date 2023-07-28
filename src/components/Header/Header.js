@@ -19,7 +19,7 @@ const Header = () => {
           </a>
         </div>
         <ul className='ul-nav md:text-[14px] text-[16px] w-full ' id='ul-nav'>
-          <li className='li-nav firstnav p-6 text-center'>
+          <li className='li-nav firstnav p-6 text-center '>
             <a href="/">Trang chủ</a>
           </li>
           <li className='li-nav p-6 text-center'>
@@ -28,8 +28,8 @@ const Header = () => {
           <li className='li-nav p-6 text-center' style={{ position: "relative" }}>
             <a href="#">Phòng</a>
             <ul id="type-movies">
-              <li className='li-nav li-drop'>
-                <a href="/Playing">Phòng đơn</a>
+              <li className='li-nav li-drop '>
+                <a href="/Playing" >Phòng đơn</a>
               </li>
               <li className='li-nav li-drop'>
                 <a href="/Upcoming">Phòng đôi</a>
@@ -43,10 +43,13 @@ const Header = () => {
             <a href="#">Ẩm thực</a>
             <ul id="type-movies">
               <li className='li-nav li-drop'>
-                <a href="/Playing">Đồ ăn,Bánh</a>
+                <a href="/Playing">Đồ ăn </a>
               </li>
               <li className='li-nav li-drop'>
-                <a href="/Upcoming">Nước uống</a>
+                <a href="/Upcoming">Nước uống,ngon</a>
+              </li>
+              <li className='li-nav li-drop'>
+                <a href="/Cake">Bánh ngọt</a>
               </li>
             </ul>
           </li>
@@ -60,13 +63,13 @@ const Header = () => {
               </div>
             </div>
           </li>
-          <li className='li-nav1 p-6 text-center'>
+          <li className='li-nav  text-center'>
               <a href="/Login" className="button ">
                 <i class="fa-solid fa-cart-shopping mr-2"></i>
                 Giỏ hàng
               </a>
             </li>
-            <li className='li-nav1 p-6 text-center'>
+            <li className='li-nav  text-center'>
               <a href="/Login" className="button">
               <i class="fa-solid fa-user mr-2"></i>
                 Đăng nhập
