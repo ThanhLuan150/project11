@@ -2,7 +2,7 @@ const Banner = ()=>{
     return(
         
         <>
-        <div className="">
+        <div className="m">
             <br></br>
             <br></br>
             <br></br>
