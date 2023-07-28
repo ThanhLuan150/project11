@@ -7,6 +7,7 @@ import Aboutus from "./components/Body/Homepages/Menu/About us";
 import Dichvu from "./components/Body/Homepages/Menu/Dichvu";
 import Cake from "./components/Body/Homepages/Menu/ListCuisine/Cake";
 import Food from "./components/Body/Homepages/Menu/ListCuisine/Food";
+import Fruit from "./components/Body/Homepages/Menu/ListCuisine/Fruit";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <Route path="/Service" element={<Dichvu />} />
     <Route path="/Cake" element={<Cake />} />
     <Route path="/Food" element={<Food/>} />
+    <Route path="/Fruit" element={<Fruit/>} />
   </Routes>    
   
   );

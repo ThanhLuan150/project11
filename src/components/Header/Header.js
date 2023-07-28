@@ -46,7 +46,7 @@ const Header = () => {
                 <a href="/Food">Đồ ăn </a>
               </li>
               <li className='li-nav li-drop'>
-                <a href="/Upcoming">Nước uống,ngon</a>
+                <a href="/Fruit">Nước uống,ngon</a>
               </li>
               <li className='li-nav li-drop'>
                 <a href="/Cake">Bánh ngọt</a>
