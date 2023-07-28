@@ -12,6 +12,7 @@ import Single from "./components/Body/Homepages/Menu/ListRoom/Single";
 import Double from "./components/Body/Homepages/Menu/ListRoom/Double";
 import Vip from "./components/Body/Homepages/Menu/ListRoom/Vip";
 import ListRoom from "./components/Body/Homepages/Menu/ListRoom/ListRoom";
+import ListCuisine from "./components/Body/Homepages/Menu/ListCuisine/ListCuisine";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
     <Route path="/Double" element={<Double/>} />
     <Route path="/Vip" element={<Vip/>} />
     <Route path="/VipRoom" element={<ListRoom/>} />
+    <Route path="/ListCuisine" element={<ListCuisine/>} />
   </Routes>    
   
   );
