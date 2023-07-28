@@ -40,7 +40,7 @@ const Header = () => {
             </ul>
           </li>
           <li className='li-nav p-6 text-center' style={{ position: "relative" }}>
-            <a href="#">Ẩm thực</a>
+            <a href="/ListCuisine">Ẩm thực</a>
             <ul id="type-movies">
               <li className='li-nav li-drop'>
                 <a href="/Food">Đồ ăn </a>
@@ -64,7 +64,7 @@ const Header = () => {
             </div>
           </li>
           <li className='li-nav  text-center'>
-              <a href="/Login" className="button ">
+              <a href="/Cart" className="button ">
                 <i class="fa-solid fa-cart-shopping mr-2"></i>
                 Giỏ hàng
               </a>
