@@ -29,7 +29,7 @@ const Header = () => {
             <a href="#">Phòng</a>
             <ul id="type-movies">
               <li className='li-nav li-drop '>
-                <a href="/Playing" >Phòng đơn</a>
+                <a href="/Single" >Phòng đơn</a>
               </li>
               <li className='li-nav li-drop'>
                 <a href="/Upcoming">Phòng đôi</a>
