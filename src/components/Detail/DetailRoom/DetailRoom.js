@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import DetailBooking from "./DetailBooking";
+import Descripbe from "./Describe";
 const DetailRoom = ()=>{ 
     const settings = {
         dots: false,
@@ -50,6 +51,7 @@ const DetailRoom = ()=>{
               </Slider>
           </div>
           <DetailBooking/>
+          <Descripbe/>
         </div>
         <Footer/>
         </>
