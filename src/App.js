@@ -13,6 +13,8 @@ import Double from "./components/Body/Homepages/Menu/ListRoom/Double";
 import Vip from "./components/Body/Homepages/Menu/ListRoom/Vip";
 import ListRoom from "./components/Body/Homepages/Menu/ListRoom/ListRoom";
 import ListCuisine from "./components/Body/Homepages/Menu/ListCuisine/ListCuisine";
+import DetailRoom from "./components/Detail/DetailRoom/DetailRoom";
+
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
     <Route path="/Vip" element={<Vip/>} />
     <Route path="/VipRoom" element={<ListRoom/>} />
     <Route path="/ListCuisine" element={<ListCuisine/>} />
+    <Route path="/DetailRoom" element={<DetailRoom/>} />
   </Routes>    
   
   );
