@@ -3,6 +3,7 @@ import Footer from "../../Footer/Footer";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import DetailBooking from "./DetailBooking";
 const DetailRoom = ()=>{ 
     const settings = {
         dots: false,
@@ -39,7 +40,7 @@ const DetailRoom = ()=>{
                 <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="" >Phòng đôi tiêu chuẩn</a></span>
             </div>
         </div>
-        <div className="lg:px-[100px] px-[20px]" >
+        <div className="xl:px-[100px] px-[10px]" >
           <div className=" py-5" >
             <Slider {...settings}>
                   <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh12082233010354fb2894f5b1193.jpg?v=1670338573270" alt="" className=" w-[664px] h-[350px]  pr-2" />
@@ -48,7 +49,7 @@ const DetailRoom = ()=>{
                   <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh3.jpg?v=1670338577307" alt="" className=" w-[664px] h-[350px]  pr-2" />
               </Slider>
           </div>
-         
+          <DetailBooking/>
         </div>
         <Footer/>
         </>
