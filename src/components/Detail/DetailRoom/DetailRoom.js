@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import DetailBooking from "./DetailBooking";
 import Descripbe from "./Describe";
+import Roomsimilartothebestroom from "./Roomsimilartothebestroom";
 const DetailRoom = ()=>{ 
     const settings = {
         dots: false,
@@ -52,6 +53,7 @@ const DetailRoom = ()=>{
           </div>
           <DetailBooking/>
           <Descripbe/>
+          <Roomsimilartothebestroom/>
         </div>
         <Footer/>
         </>
