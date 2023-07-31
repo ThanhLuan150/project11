@@ -36,7 +36,7 @@ const DetailRoom = ()=>{
                 <i className="fa-solid fa-chevron-right mx-2" ></i>
                 <span className="mx-2 text-[#333] text-[14px] font-mono"><a href="" >Phòng đơn</a></span>
                 <i className="fa-solid fa-chevron-right mx-2" ></i>
-                <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="" >Phòng đơn tiêu chuẩn</a></span>
+                <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="" >Phòng đôi tiêu chuẩn</a></span>
             </div>
         </div>
         <div className="lg:px-[100px] px-[20px]" >
