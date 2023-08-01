@@ -15,6 +15,7 @@ import ListRoom from "./components/Body/Homepages/Menu/ListRoom/ListRoom";
 import ListCuisine from "./components/Body/Homepages/Menu/ListCuisine/ListCuisine";
 import DetailRoom from "./components/Detail/DetailRoom/DetailRoom";
 import DetailFood from "./components/Detail/DetailFood/DetailFood";
+import Cart from "./components/Cart/Cart";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
     <Route path="/ListCuisine" element={<ListCuisine/>} />
     <Route path="/DetailRoom" element={<DetailRoom/>} />
     <Route path="/DetailFood" element={<DetailFood/>} />
+    <Route path="/Cart" element={<Cart/>}></Route>
   </Routes>    
   
   );
