@@ -1,6 +1,6 @@
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
-import Slider from 'react-slick';
+import MaybeyoulikeRelatedproducts from "../DetailFood/MaybeyoulikeRelatedproducts"
 import DetailFoodss from "./DetailFoodss";
 import DescripbeFood from "./DescribeFood";
 const DetailFood = ()=>{ 
@@ -21,6 +21,7 @@ const DetailFood = ()=>{
         <div className="xl:px-[100px] px-[10px] " >
           <DetailFoodss/>
           <DescripbeFood/>
+          <MaybeyoulikeRelatedproducts/>
         </div>
         <Footer/>
         </>
