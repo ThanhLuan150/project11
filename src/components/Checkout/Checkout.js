@@ -2,8 +2,8 @@ const Checkout = ()=>{
     return(
         
         <>
-        <div className="flex flex-row md:px-[100px] px-[10px] gap-6">
-            <div className="py-8 basis-2/6">
+        <div className="lg:flex lg:flex-row flex flex-col md:px-[100px] px-[10px] gap-6">
+            <div className="lg:py-8 py-4 basis-2/6 ">
                 <div className="text-[28px]  text-[#2a9dcc] font-sans">Bean Hotel</div>
                 <div className="text-[#333333] text-[18px] font-san my-2">Thông tin nhận hàng</div>
                 <div className="flex flex-col">
@@ -24,7 +24,7 @@ const Checkout = ()=>{
                     </div>
                 </div>
             </div>
-            <div className="basis-2/6 py-[82px]">
+            <div className="basis-2/6 lg:py-[82px] py-0">
                 <div  className="py-1">
                     <div className="text-[#333333] text-[18px] font-san my-1 ">Vận chuyển</div>
                     <div className="py-2">
@@ -46,7 +46,9 @@ const Checkout = ()=>{
             </div>
             <div className="basis-2/6 py-4 ">
                 <div className="text-[#333333] text-[18px] font-san px-4">Đơn hàng (1 sản phẩm)</div>
-                <div className="border w-full my-3 mx-4"></div>
+                <div className="px-4">
+                    <div className="border w-full my-3"></div>
+                </div> 
                 <div className="flex flex-rơw justify-between py-4 px-4">
                     <div className="flex flex-row gap-2">
                         <div>
@@ -56,7 +58,9 @@ const Checkout = ()=>{
                     </div>
                     <div className="text-[14px] text-[#747474] font-medium py-2">75.000đ</div>
                 </div>
-                <div className="border w-full my-3 mx-4"></div>
+               <div className="px-4">
+                    <div className="border w-full my-3"></div>
+                </div> 
                 <div className="">
                     <div className="flex flex-row justify-between  px-4 py-2">
                         <div className="text-[14px] text-[#747474] font-medium ">Tạm tính</div>
@@ -67,14 +71,16 @@ const Checkout = ()=>{
                         <div className="text-[14px] text-[#747474] font-medium ">40.000đ</div>
                     </div>
                 </div>
-                <div className="border w-full my-3 mx-4"></div>
+                <div className="px-4">
+                    <div className="border w-full my-3"></div>
+                </div> 
                 <div className="flex flex-row justify-between  px-4 py-2">
-                    <div>Tổng cộng</div>
-                    <div>115.000đ</div>
+                    <div className="text-[17px] text-[#747474] font-medium ">Tổng cộng</div>
+                    <div className="text-[21px] text-[#2a9dcc] font-medium ">115.000đ</div>
                 </div>
-                <div>
-                    <a href="/Cart">Quay về giỏ hàng</a>
-                    <div>115.000đ</div>
+                <div className="flex flex-row justify-between px-4 py-2">
+                    <a  className="text-[14px] text-[#2a9dcc] font-medium "href="/Cart">Quay về giỏ hàng</a>
+                    <div className="bg-[#2a6395] w-max px-5 py-3 uppercase text-white text-[14px] font-medium rounded-lg">Đặc hàng</div>
                 </div>
             </div>
         </div>
