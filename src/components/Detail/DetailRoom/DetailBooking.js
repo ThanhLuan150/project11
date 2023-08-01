@@ -94,7 +94,7 @@ const DetailBooking = ()=>{
                         <button type="button" className="bg-[#fff] border border-[#000000] w-full px-2 py-2 uppercase font-medium text-[16px] rounded-lg text-[#000000] hover:bg-[#000000] hover:text-white">Tạm tính</button>
                     </div>
                     <div className=" py-3">
-                        <button type="button" className="bg-[#cd9a2b] w-full px-2 py-2 uppercase font-medium text-[16px]  rounded-lg text-white">Đặt phòng</button>
+                        <a href="/Booking" type="button" className="bg-[#cd9a2b] w-full px-2 py-2 uppercase font-medium text-[16px]  rounded-lg text-white">Đặt phòng</a>
                     </div>
                 </div>
             </div>
