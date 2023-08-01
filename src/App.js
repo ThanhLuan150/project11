@@ -16,6 +16,7 @@ import ListCuisine from "./components/Body/Homepages/Menu/ListCuisine/ListCuisin
 import DetailRoom from "./components/Detail/DetailRoom/DetailRoom";
 import DetailFood from "./components/Detail/DetailFood/DetailFood";
 import Cart from "./components/Cart/Cart";
+import Checkout from "./components/Checkout/Checkout";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
     <Route path="/DetailRoom" element={<DetailRoom/>} />
     <Route path="/DetailFood" element={<DetailFood/>} />
     <Route path="/Cart" element={<Cart/>}></Route>
+    <Route path="/Checkout" element={<Checkout/>}></Route>
   </Routes>    
   
   );
