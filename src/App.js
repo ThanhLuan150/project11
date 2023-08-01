@@ -14,6 +14,7 @@ import Vip from "./components/Body/Homepages/Menu/ListRoom/Vip";
 import ListRoom from "./components/Body/Homepages/Menu/ListRoom/ListRoom";
 import ListCuisine from "./components/Body/Homepages/Menu/ListCuisine/ListCuisine";
 import DetailRoom from "./components/Detail/DetailRoom/DetailRoom";
+import DetailFood from "./components/Detail/DetailFood/DetailFood";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
     <Route path="/VipRoom" element={<ListRoom/>} />
     <Route path="/ListCuisine" element={<ListCuisine/>} />
     <Route path="/DetailRoom" element={<DetailRoom/>} />
+    <Route path="/DetailFood" element={<DetailFood/>} />
   </Routes>    
   
   );
