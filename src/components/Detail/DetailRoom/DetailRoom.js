@@ -33,7 +33,7 @@ const DetailRoom = ()=>{
     return(
         <>
         <Header/>
-        <div className="pt-[100px]">
+        <div className="pt-[65px]">
             <div className="bg-[#f5f5f5] py-3 ">
                 <span className="mx-2 text-[#333] text-[14px] font-mono"><a href="/">Trang chủ</a></span>
                 <i className="fa-solid fa-chevron-right mx-2" ></i>

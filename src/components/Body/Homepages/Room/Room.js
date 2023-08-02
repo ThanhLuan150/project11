@@ -6,7 +6,7 @@ const Room = ()=>{
     return(
         
         <>
-        <div className="bg-[#f8f9fa] py-6">
+        <div className="bg-[#f8f9fa]">
             <SingleRoom/>
             <DouleRoom/>
             <VipRoom/>
