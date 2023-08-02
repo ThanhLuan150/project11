@@ -13,7 +13,7 @@ const Aboutus = ()=>{
                 <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="#" >Về chúng tôi</a></span>
             </div>
         </div>
-        <div className="md:mx-[100px] mx-[30px] my-8">
+        <div className="xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px] my-8">
             <a href="/Aboutus" className="text-[16px] uppercase font-medium hover:text-[#ffc107] transition-all duration-500 "><strong >Về chúng tôi</strong></a>
             <div className="text-[14px] font-mono text-[#333] mt-2">Là khách sạn 5 sao đẳng cấp quốc tế, tọa lạc tại giao điểm của bốn quận chính, nơi được xem như trái tim và trung tâm của TP. Hồ Chí Minh.</div>
             <div className="mt-4">
