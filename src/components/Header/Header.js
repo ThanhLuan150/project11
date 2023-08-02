@@ -1,95 +1,47 @@
-import "./header.css";
+import React, { useState } from 'react';
+import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 
 const Header = () => {
+    let Links =[
+        {name:"Trang chủ",link:"/"},
+        {name:"Về chúng tôi",link:"/Aboutus"},
+        {name:"Phòng",link:"/ListRoom"},
+        {name:"Ẩm thực",link:"/ListCuisine"},
+        {name:"Dịch vụ",link:"/Service"},
+      ];
+      let [open, setOpen] =useState(false);
 
-  return (
-    <div>
-      <nav className="header py-2 px-3 md:py-3 xl:px-[60px] ">
-        <input type='checkbox' id="checkbox"></input>
-        <label htmlFor="checkbox" className='check-btn-res'>
-          <i className='fas fa-bars'></i>
-        </label>
-      
-        <div style={{ whiteSpace: "nowrap" }}>
-          <a href='/' style={{ textDecoration: "none" }}>
-            <img
-              className="logo w-full bg-repeat"
-              src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/logo.png?1685581511029"
-              alt=""
-            />
-          </a>
-        </div>
-        <ul className='ul-nav md:text-[14px] text-[16px] w-full ' id='ul-nav'>
-          <li className='li-nav firstnav p-6 text-center '>
-            <a href="/">Trang chủ</a>
-          </li>
-          <li className='li-nav p-6 text-center'>
-            <a href="/Aboutus">Về chúng tôi</a>
-          </li>
-          <li className='li-nav p-6 text-center' style={{ position: "relative" }}>
-            <a href="/VipRoom">Phòng</a>
-              <input type='checkbox' id="checkbox1"></input>
-              <label htmlFor="checkbox1" className='check-btn-res1'>
-                <i class="fa-solid fa-plus"></i>
-            </label>
-            <ul id="type-movies">
-              <li className='li-nav li-drop '>
-                <a href="/Single" >Phòng đơn</a>
-              </li>
-              <li className='li-nav li-drop'>
-                <a href="/Double">Phòng đôi</a>
-              </li>
-              <li className='li-nav li-drop'>
-                <a href="/Vip">Phòng Vip</a>
-              </li>
-            </ul>
-          </li>
-          <li className='li-nav p-6 text-center' style={{ position: "relative" }}>
-            <a href="/ListCuisine">Ẩm thực</a>
-            <input type='checkbox' id="checkbox2"></input>
-            <label htmlFor="checkbox2" className='check-btn-res2'>
-              <i className="fa-solid fa-plus rotate-90"></i>
-            </label>
-            <ul id="type-food">
-              <li className='li-nav li-drop'>
-                <a href="/Food">Đồ ăn</a>
-              </li>
-              <li className='li-nav li-drop'>
-                <a href="/Fruit">Nước uống</a>
-              </li>
-              <li className='li-nav li-drop'>
-                <a href="/Cake">Bánh ngọt</a>
-              </li>
-            </ul>
-          </li>
-
-          <li className='li-nav firstnav p-6 text-center'>
-            <a href="/Service">Dịch vụ</a>
-          </li>
-          <li className='li-nav p-6 text-center'>
-            <div className="search_site" style={{ display: 'flex' }}>
-              <div className="search_result">
-              <input id='search' type="text" className="search" />
-              </div>
+    return (
+        <div className=' shadow-md  w-full fixed top-0 left-0 z-20 '>
+           <div className='lg:flex items-center justify-between bg-white py-4 lg:px-10 px-5'>
+            {/* logo section */}
+            <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
+                <BookOpenIcon className='w-7 h-7 text-blue-600'/>
+                <span>Bean Hotel</span>
             </div>
-          </li>
-          <li className='li-nav  text-center'>
-              <a href="/Cart" className="button ">
-                <i class="fa-solid fa-cart-shopping mr-2"></i>
-                Giỏ hàng
-              </a>
-            </li>
-            <li className='li-nav  text-center'>
-              <a href="/Login" className="button">
-              <i class="fa-solid fa-user mr-2"></i>
-                Đăng nhập
-              </a>
-            </li>
-        </ul>
-
-      </nav>
-    </div>
-  );
+            {/* Menu icon */}
+            <div onClick={()=>setOpen(!open)} className='absolute right-8 top-6 cursor-pointer lg:hidden w-7 h-7'>
+                {
+                    open ? <XMarkIcon/> : <Bars3BottomRightIcon />
+                }
+            </div>
+            {/* linke items */}
+            <ul className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
+                {
+                    Links.map((link) => (
+                    <li className='lg:ml-8 lg:my-0 my-7 font-semibold'>
+                        <a href={link.link} className='text-gray-800 hover:text-[#cd9a2b] duration-500 font-medium'>{link.name}</a>
+                    </li>))
+                }
+                <div className='flex lg:gap-0 gap-2'>
+                  <a href="/Cart"className='btn bg-[#cd9a2b] text-white lg:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Giỏ hàng</a>
+                  <a  href="/Login"className='btn bg-[#cd9a2b] text-white lg:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Đăng nhập</a>
+                </div>
+            </ul>
+            {/* button */}
+           </div>
+        </div>
+    );
 };
 
 export default Header;

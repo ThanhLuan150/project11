@@ -1,8 +1,8 @@
 const SingleRoom = ()=>{ 
     return(
-        <div className=" xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]">
+        <div className=" xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px] mt-20 py-5">
             <div className="flex flex-col test-center items-center">
-                <div className="text-[30px] uppercase  text-center hover:text-[#ffc107] transition-all duration-500">Phòng</div>
+                <a href="/Single" className="text-[30px] uppercase  text-center hover:text-[#ffc107] transition-all duration-500 font-bold">Phòng</a>
                 <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
                 <div className="w-[120px] border-[0.5px] border-gray-600"></div>
             </div>
