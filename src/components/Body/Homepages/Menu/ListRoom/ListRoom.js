@@ -1,6 +1,5 @@
 import Header from "../../../../Header/Header";
 import Footer from "../../../../Footer/Footer";
-import { List } from "@material-ui/core";
 const ListRoom = ()=>{
     return (
         <>
@@ -12,7 +11,7 @@ const ListRoom = ()=>{
                 <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="/Double" >Phòng</a></span>
             </div>
         </div>
-        <div className="md:mx-[100px] mx-[30px] my-8">
+        <div className="xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px] my-8">
             <div className="flex flex-row justify-between bg-[#f5f5f5] w-full py-3 px-3 rounded-lg">
                 <div className="text-[16px] font-bold uppercase">Phòng</div>
                 <div className="flex gap-3">
