@@ -2,7 +2,7 @@ const Checkout = ()=>{
     return(
         
         <>
-        <div className="lg:flex lg:flex-row flex flex-col md:px-[100px] px-[10px] gap-6">
+        <div className="lg:flex lg:flex-row flex flex-col xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]  gap-6">
             <div className="lg:py-8 py-4 basis-2/6 ">
                 <div className="text-[28px]  text-[#2a9dcc] font-sans">Bean Hotel</div>
                 <div className="text-[#333333] text-[18px] font-san my-2">Thông tin nhận hàng</div>
