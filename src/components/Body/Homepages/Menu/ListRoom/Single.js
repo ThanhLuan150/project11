@@ -13,7 +13,7 @@ const Single = ()=>{
         </div>
         <div className="md:mx-[100px] mx-[30px] my-8">
             <div className="flex flex-row justify-between bg-[#f5f5f5] w-full py-3 px-3 rounded-lg">
-                <div className="text-[16px] font-bold uppercase">Phòng đơn</div>
+                <div className="text-[16px] font-bold uppercase font-medium">Phòng đơn</div>
                 <div className="flex gap-3">
                     <div className="flex gap-2 ">
                         <div>
