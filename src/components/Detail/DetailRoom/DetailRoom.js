@@ -42,7 +42,7 @@ const DetailRoom = ()=>{
                 <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="" >Phòng đôi tiêu chuẩn</a></span>
             </div>
         </div>
-        <div className="xl:px-[100px] px-[10px]" >
+        <div className="xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]" >
           <div className=" py-5" >
             <Slider {...settings}>
                   <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh12082233010354fb2894f5b1193.jpg?v=1670338573270" alt="" className=" w-[664px] h-[350px]  pr-2" />
