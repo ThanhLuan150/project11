@@ -9,7 +9,7 @@ const Login = ()=>{
             <div className="bg-[#f8f9fa] h-screen">
                 <div className="bg-[#f8f9fa]">
                     <div className="py-16 flex justify-center items-center ">
-                        <form action="" className="bg-[#fff] rounded-lg lg:w-[40%] md:w-[50%] sm:w-[60%] w-[90%]  ">
+                        <form action="" className="bg-[#fff] rounded-lg lg:w-[40%] md:w-[50%] sm:w-[60%] w-[100%]  ">
                             <div className="text-[26px] text-[#cd9a2b] font-medium uppercase text-center py-4 ">ĐĂNG NHẬP</div>
                             <div className="px-2 py-3">
                                 <input className="border border-[#e1e1e1] box-shadow outline-none py-2 w-full pl-4 placeholder:text-[14px] placeholder:text-[#333] placeholder:font-mono" type="text"name="" placeholder="Email" ></input>
