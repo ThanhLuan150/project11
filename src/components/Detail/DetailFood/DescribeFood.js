@@ -16,8 +16,8 @@ const DescripbeFood = ()=>{
         
         <div className="my-5">
             <div className="flex gap-2">
-                <div  className="bg-[#cd9a2b] flex justify-center py-2 px-3  items-end w-max text-white text-[18px] font-medium rounded-t-lg cursor-pointer" onClick={handleClick1}>Mô tả sản phẩm</div>
-                <div  className="bg-[#cd9a2b] flex justify-center py-2 px-3  items-end w-max text-white text-[18px] font-medium rounded-t-lg cursor-pointer" onClick={handleClick2}>Chính sách đổi trả</div>
+                <div  className="bg-[#cd9a2b] flex justify-center py-2 sm:px-3 px-2  items-end w-max text-white sm:text-[18px] text-[16px] font-medium rounded-t-lg cursor-pointer" onClick={handleClick1}>Mô tả sản phẩm</div>
+                <div  className="bg-[#cd9a2b] flex justify-center py-2 sm:px-3 px-2  items-end w-max text-white sm:text-[18px] text-[16px] font-medium rounded-t-lg cursor-pointer" onClick={handleClick2}>Chính sách đổi trả</div>
     
             </div>
             <div>

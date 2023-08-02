@@ -25,7 +25,7 @@ const DetailFoodss= ()=>{
                     <div className="border border-[#ddd] my-3"></div>
                     <div className="text-[#333] text-[14px] font-mono">Đĩa mì xào thơm ngon nóng hổi sẽ cung cấp bữa sáng tuyệt vời, đầy đủ dinh dưỡng, năng lượng cho một ngày dài. Sự hòa quyện vị ngọt tự nhiên của rau củ, thịt và gia vị sẽ giúp món mì thêm đậm đà, đượm vị.</div>
                     <div className="border border-[#ddd] my-3"></div>
-                    <div className="flex md:gap-2 gap-0 flex-row py-2">
+                    <div className="flex md:gap-2 gap-1 flex-row py-2">
                         <div className="basis-1/6 flex flex-row">
                             <div className="">
                                 <input className="outline-none w-[40px] h-[50px] border px-2 text-center border-[#ddd]" type="text"name=""  ></input>
@@ -36,7 +36,7 @@ const DetailFoodss= ()=>{
                             </div>
                         </div>
                         <div className="basis-5/6 pt-3" >
-                            <a className="bg-[#cd9a2b] w-max text-white uppercase px-10 py-3 text-[14px] font-mono hover:text-[#cd9a2b] hover:border-[#cd9a2b] hover:border hover:bg-white transition-all duration -500" href="/Cart">Thêm vào giỏ hàng</a>
+                            <a className="bg-[#cd9a2b] w-max text-white uppercase sm:px-10 px-3 py-3 text-[14px] font-mono hover:text-[#cd9a2b] hover:border-[#cd9a2b] hover:border hover:bg-white transition-all duration -500" href="/Cart">Thêm vào giỏ hàng</a>
                         </div>
                     </div>
                 </div>
