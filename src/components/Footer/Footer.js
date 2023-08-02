@@ -2,7 +2,7 @@ const Footer = ()=>{
     return(
         
         <>
-          <div className="bg-[url('https://www.mtut.pk/wp-content/uploads/2018/09/footer-bg-black.jpg')] w-full h-full md:px-[100px] md:py-[30px] px-[40px] py-[10px]">
+          <div className="bg-[url('https://www.mtut.pk/wp-content/uploads/2018/09/footer-bg-black.jpg')] w-full h-full md:px-[100px] md:py-[30px] sm:px-[30px] px-[20px] py-[2px]">
             <div className="xl:grid xl:grid-cols-4 lg:grid  lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1  md:gap-1 gap-[100px]">
                 <div className="flex flex-col md:text-left text-center md:items-start md:justify-start">
                     <div className="text-white uppercase font-medium my-2"> HotLine Hỗ trợ </div>
@@ -103,7 +103,7 @@ const Footer = ()=>{
             <div className="lg:grid lg:grid-cols-2 gap-10 my-10 grid grid-cols-1 ">
                 <div>
                     <div><a href="#"><img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/logo_foo.png?1685581511029"></img></a></div>
-                    <div className="text-white  font-mono my-2">Nằm ở trung tâm thành phố và nhiều thành phố khác. Chúng tôi cung cấp chỗ nghỉ thanh lịch và đầy phong cách với truy cập Wifi miễn phí trong các khu vực chung. Khách sạn có lễ tân 24 giờ, hồ bơi trong nhà, trung tâm thể dục và bãi đỗ xe miễn phí trong khuôn viên.</div>
+                    <div className="text-white text-[14px]  font-mono my-2 ">Nằm ở trung tâm thành phố và nhiều thành phố khác. Chúng tôi cung cấp chỗ nghỉ thanh lịch và đầy phong cách với truy cập Wifi miễn phí trong các khu vực chung. Khách sạn có lễ tân 24 giờ, hồ bơi trong nhà, trung tâm thể dục và bãi đỗ xe miễn phí trong khuôn viên.</div>
                 </div>
                 <div>
                     <div className="text-white uppercase font-medium my-2">

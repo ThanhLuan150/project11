@@ -1,7 +1,7 @@
 const IntroduceHotel = ()=>{ 
     return(
         <>
-        <div className="xl:mx-[100px] xl:my-[30px] mx-0 my-[40px] lg:grid lg:grid-cols-2 grid grid-cols-1 ">
+        <div className="xl:mx-[100px] lg:mx-[30px]  xl:my-[30px] mx-0 my-[40px] lg:grid lg:grid-cols-2 grid grid-cols-1 ">
             <div className="lg:mx-0 md:mx-[50px] mx-[10px] lg:my-4 my-3" >
                 <img className="w-full h-full     " img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/about.jpg?1685581511029"></img>
             </div>

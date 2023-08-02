@@ -22,13 +22,13 @@ const Cuisine = ()=>{
   };
     return (
         
-        <div className="my-5 xl:mx-[100px] mx-[40px]">
-            <div className="flex flex-col test-center items-center">
+        <div className="my-5 xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]">
+            <div className="flex flex-col test-center items-center font-medium">
                 <div className="text-[30px] uppercase  text-center hover:text-[#ffc107] transition-all duration-500">Ẩm thực</div>
                 <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
                 <div className="w-[120px] border-[0.5px] border-gray-600"></div>
             </div>
-            <div className="flex  gap-10 text-center justify-center my-7 text-[17px]">
+            <div className="flex  sm:gap-10 gap-6 text-center justify-center my-7 text-[17px] font-medium">
                 <div className="uppercase font-medium tqd-top-menu-item tqd-top-menu-item-active " onClick={handleClick1}>Món ăn</div>
                 <div className="uppercase font-medium tqd-top-menu-item tqd-top-menu-item-active " onClick={handleClick2}>Đồ uống</div>
                 <div className="uppercase font-medium tqd-top-menu-item tqd-top-menu-item-active "onClick={handleClick3}>Bánh ngọt</div>

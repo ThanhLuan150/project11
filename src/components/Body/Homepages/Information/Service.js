@@ -25,7 +25,7 @@ const Service = () => {
   return (
     <div className='bg-[#f8f9fa] py-6 '>
     <div className="my-5 xl:mx-[100px] mx-[10px] ">
-        <div className="flex  gap-10 text-center items-center justify-center my-7 text-[17px] ">
+        <div className="flex  sm:gap-10 gap-5 text-center items-center justify-center my-7 text-[17px] ">
             <div className="uppercase font-medium tqd-top-menu-item tqd-top-menu-item-active " onClick={handleClick1}><img className='mx-7' src='https://bizweb.dktcdn.net/thumb/small/100/472/947/themes/888072/assets/cutlery.png?1685581511029'></img> Khách sạn</div>
             <div className="uppercase font-medium tqd-top-menu-item tqd-top-menu-item-active " onClick={handleClick2}><img className='mx-7' src='https://bizweb.dktcdn.net/thumb/small/100/472/947/themes/888072/assets/meeting.png?1685581511029'></img>Phòng họp</div>
             <div className="uppercase font-medium tqd-top-menu-item tqd-top-menu-item-active "onClick={handleClick3}><img className='mx-7' src='https://bizweb.dktcdn.net/thumb/small/100/472/947/themes/888072/assets/skin-care.png?1685581511029'></img>Làm đẹp</div>
@@ -37,7 +37,7 @@ const Service = () => {
                  <div className='basis-2/6 '>
                     <div className='italic text-[32px] text-white font-mono mx-3 mt-10' >TIỆN NGHI SANG TRỌNG</div>
                     <div>
-                        <img className=' w-full h-full pl-3 pt-10 pb-4 lg:pr-0 pr-7 lg:pl-5 pl-7' src='https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/banner1_tab1.jpg?1685581511029'></img>
+                        <img className=' w-full h-full pl-3 pt-10 pb-3 md:pr-3 pr-2 md:pl-3 pl-2' src='https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/banner1_tab1.jpg?1685581511029'></img>
                     </div>
                  </div>
                  <div className='basis-2/6  xl:py-[80px] xl:px-[40px] lg:py-[60px] lg:px-[20px] py-[20px]  px-[10px] '>
@@ -53,7 +53,7 @@ const Service = () => {
                 </div>
                  <div className='basis-2/6'>
                     <div>
-                        <img className='w-full mt-4 pr-4 lg:pl-0 pl-4 lg:pb-0 pb-4 lg:pl-0 pl-7 lg:pr-5 pr-7' src='https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/banner2_tab1.jpg?1685581511029'></img>
+                        <img className='w-full pl-3 pt-3 pb-2 md:pr-3 pr-2 md:pl-3 pl-2' src='https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/banner2_tab1.jpg?1685581511029'></img>
                     </div>
                  </div>
             </div>
