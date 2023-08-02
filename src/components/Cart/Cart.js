@@ -11,7 +11,7 @@ const Cart = ()=>{
                 <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="/Double" >Giỏ hàng của bạn</a></span>
             </div>
         </div>
-        <div className="lg:mx-[100px] mx-[10px] my-8">
+        <div className="xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]  my-8">
             <div className="flex flex-row justify-between bg-[#f5f5f5] w-full py-3 px-3 rounded-lg">
                 <div className="text-[16px] font-bold uppercase">Giỏ hàng của bạn </div>
             </div>
@@ -45,7 +45,7 @@ const Cart = ()=>{
                     <div className="basis-1/6 text-[14px] font-bold lg:text-center text-end text-[#e8002d] sm:py-5 py-6">40.000₫</div>
                 </div>
             </div>
-            <div className="flex justify-end text-end">
+            <div className="flex justify-end text-end sm:gap-0 gap-2">
                 <div className="text-[#323c42] text-[15px] font-medium uppercase">Tổng tiền</div>
                 <div className="basis-1/6 text-[14px] font-bold text-[#e8002d]">40.000₫</div>
             </div>
