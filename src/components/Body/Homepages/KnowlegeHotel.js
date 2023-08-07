@@ -13,7 +13,7 @@ const KnowledHotel= ()=>{
                     <div className="">
                         <img className="w-full h-full" src="https://bizweb.dktcdn.net/thumb/large/100/472/947/articles/10-xu-huong-thinh-hanh-trong-nganh-khach-san-2021.jpg?v=1670342054747"></img>
                     </div>
-                    <div className="px-[20px]">
+                    <div className="md:px-[20px] px-2">
                         <div className="relative  bottom-[50px] bg-[#f8f9fa] drop-shadow-md  rounded-lg w-full ">
                             <div className="flex flex-col justify-center text-center items-center py-4 text-[22px] font-medium px-6 hover:text-[#ffc107] transition-all duration-500">
                                 10 xu hướng thịnh hành trong ngành khách sạn 2022
@@ -35,7 +35,7 @@ const KnowledHotel= ()=>{
                     <div className="">
                         <img className="w-full h-full" src="https://bizweb.dktcdn.net/thumb/large/100/472/947/articles/nhung-dieu-kieng-ky-khi-o-khach-san-ma-ban-can-biet.jpg?v=1670340419703"></img>
                     </div>
-                    <div className="px-[20px]">
+                    <div className="md:px-[20px] px-2">
                         <div className="relative bottom-[50px] bg-[#f8f9fa] drop-shadow-md  rounded-lg">
                             <div className="flex flex-col justify-center text-center items-center py-4 text-[22px] font-medium px-6 hover:text-[#ffc107] transition-all duration-500">
                             Những điều kiêng kị khi ở khách sạn mà bạn nên biết
@@ -57,7 +57,7 @@ const KnowledHotel= ()=>{
                     <div className="">
                         <img className="w-full h-full" src="https://bizweb.dktcdn.net/thumb/large/100/472/947/articles/y-nghia-viec-khach-san-de-chocolate-len-goi-khi-don-phong.jpg?v=1670340914720"></img>
                     </div>
-                    <div className="px-[20px]">
+                    <div className="md:px-[20px] px-2">
                         <div className="relative bottom-[50px] bg-[#f8f9fa] drop-shadow-md  rounded-lg">
                             <div className="flex flex-col justify-center text-center items-center py-4 text-[22px] font-medium px-6 hover:text-[#ffc107] transition-all duration-500">
                             Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng

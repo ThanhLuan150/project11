@@ -2,7 +2,7 @@ const Footer = ()=>{
     return(
         
         <>
-          <div className="bg-[url('https://www.mtut.pk/wp-content/uploads/2018/09/footer-bg-black.jpg')] w-full h-full md:px-[100px] md:py-[30px] sm:px-[30px] px-[20px] py-[2px]">
+          <div className="bg-[url('https://www.mtut.pk/wp-content/uploads/2018/09/footer-bg-black.jpg')] w-full h-full md:px-[100px] md:py-[30px] sm:px-[30px] px-[5px] py-[2px]">
             <div className="xl:grid xl:grid-cols-4 lg:grid  lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1  md:gap-1 gap-[100px]">
                 <div className="flex flex-col md:text-left text-center md:items-start md:justify-start">
                     <div className="text-white uppercase font-medium my-2"> HotLine Hỗ trợ </div>
@@ -30,7 +30,7 @@ const Footer = ()=>{
                                 name="EMAIL"
                                 id="mail"
                             />
-                            <button name="subscribe" id="subscribe" className="bg-[#ffc107] px-2 py-2 uppercase text-medium text-white">
+                            <button name="subscribe" id="subscribe" className="bg-[#ffc107] sm:px-2 sm:py-2 px-0.5 py-0.5 sm:text-[14px] text-[12px] uppercase text-medium text-white">
                                 Đăng ký
                             </button>
                         </form>
