@@ -4,7 +4,7 @@ const DetailBooking = ()=>{
         <>
         <div className="lg:flex lg:flex-row gap-5 flex flex-col">
             <div className="basis-4/6">
-                <div className="text-[22px] font-medium text-[#323C42]">Phòng đôi tiêu chuẩn</div>
+                <div className="text-[22px] font-medium text-[#323C42] hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">Phòng đôi tiêu chuẩn</div>
                 <div className=" md:grid md:grid-cols-3  grid grid-cols-2 border border-[#cd9a2b] rounded-lg   md:gap-3 gap-0 md:px-3 px-2 py-4">
                     <div className="basis-2/6 flex gap-3 ">
                         <div className="basic-3/6">
@@ -27,7 +27,7 @@ const DetailBooking = ()=>{
                 </div>
                 <div className="font-mono text-[14px] text-[#323c42] mt-4 pb-5">Các phòng trang nhã và dãy phòng trang nghiêm của chúng tôi gợi nhớ về một thời đại đã qua. Mỗi tính năng như đường cong, thảm sang trọng, trần nhà cao, phòng tắm lát đá cẩm thạch, thiết bị làm sạch và nhiều không gian đều được bố trí một cách chu đáo để gọi cho riêng bạn. Tông màu nâu phong phú và gỗ sồi tự nhiên tạo nên những khu bảo tồn yên tĩnh và yên tĩnh, được tôn lên một cách tuyệt vời bởi đồ nội thất trang nhã.</div>
                 <div className="">
-                    <div className="bg-[#cd9a2b] flex justify-center py-2 px-3 border-b-0 items-end w-max text-white text-[18px] font-bold rounded-t-lg hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500 ">Dịch vụ phòng</div>
+                    <div className="bg-[#cd9a2b] flex justify-center py-2 px-3 border-b-0 items-end w-max text-white text-[18px] font-bold rounded-t-lg hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">Dịch vụ phòng</div>
                     <div className=" md:grid md:grid-cols-3  grid grid-cols-2 border border-[#cd9a2b] rounded-r-lg  md:gap-3 gap-0 md:px-3 px-2 py-4">
                         <div className="basis-2/6 flex gap-3 ">
                             <div className="basic-3/6">
@@ -91,7 +91,7 @@ const DetailBooking = ()=>{
                         <input className="border rounded-lg py-2 px-2 placeholder:text-[#6c707e] text-[14px] font-mono placeholder:font-mono text-[#6c707e] outline-none w-full" type="text"name="" placeholder="Trẻ em"></input>
                     </div>
                     <div className="py-3 ">
-                        <button type="button" className="bg-[#fff] border border-[#000000] w-full px-2 py-2 uppercase font-bold text-[16px] rounded-lg text-[#000000] hover:bg-[#000000] hover:text-white">Tạm tính</button>
+                        <button type="button" className="bg-[#fff] border border-[#000000] w-full px-2 py-2 uppercase font-bold text-[16px] rounded-lg text-[#000000] hover:bg-[#000000] hover:text-white transition-all duration-500">Tạm tính</button>
                     </div>
                     <div className=" py-3">
                         <a href="/Booking" type="button" className="bg-[#cd9a2b] w-full px-4 py-2 uppercase font-bold text-[16px] text-center  rounded-lg text-white hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500">Đặt phòng</a>

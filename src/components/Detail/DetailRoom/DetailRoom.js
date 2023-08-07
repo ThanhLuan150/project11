@@ -45,10 +45,10 @@ const DetailRoom = ()=>{
         <div className="xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]" >
           <div className=" py-5" >
             <Slider {...settings}>
-                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh12082233010354fb2894f5b1193.jpg?v=1670338573270" alt="" className=" w-[664px] h-[350px]  pr-2" />
-                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh2a207ea102d484b3486f4582e6d.jpg?v=1670338573270" alt="" className="  w-[664px] h-[350px]  pr-2" />
-                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh2a207ea102d484b3486f4582e6d.jpg?v=1670338573270" alt=""className="  w-[664px] h-[350px] pr-2" />
-                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh3.jpg?v=1670338577307" alt="" className=" w-[664px] h-[350px]  pr-2" />
+                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh12082233010354fb2894f5b1193.jpg?v=1670338573270" alt="" className="w-[664px] h-[350px]  pr-2 cursor-pointer" />
+                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh2a207ea102d484b3486f4582e6d.jpg?v=1670338573270" alt="" className="w-[664px] h-[350px]  pr-2 cursor-pointer" />
+                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh2a207ea102d484b3486f4582e6d.jpg?v=1670338573270" alt=""className=" w-[664px] h-[350px]  pr-2 cursor-pointer" />
+                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh3.jpg?v=1670338577307" alt="" className=" w-[664px] h-[350px]  pr-2 cursor-pointer" />
               </Slider>
           </div>
           <DetailBooking/>

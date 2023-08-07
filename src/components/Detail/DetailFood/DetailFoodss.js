@@ -5,17 +5,17 @@ const DetailFoodss= ()=>{
             <div className="md:flex md:flex-row flex flex-col gap-5 py-6">
                 <div className="basis-3/6">
                     <div className="">
-                        <img className="w-full h-full" src="https://bizweb.dktcdn.net/100/472/947/products/sp3c.jpg?v=1670338561717"></img>
+                        <img className="w-full h-full border hover:border-[#cd9a2b] transition-all duration-500 cursor-pointer" src="https://bizweb.dktcdn.net/100/472/947/products/sp3c.jpg?v=1670338561717"></img>
                     </div>
                     <div className="flex flex-row gap-2 lg:pr-[200px] pr-[100px] py-3 m-auto">
                         <div className="">
-                            <img className="" src="https://bizweb.dktcdn.net/thumb/medium/100/472/947/products/sp3c.jpg?v=1670338561717"></img>
+                            <img className="border hover:border-[#cd9a2b] transition-all duration-500 cursor-pointer" src="https://bizweb.dktcdn.net/thumb/medium/100/472/947/products/sp3c.jpg?v=1670338561717"></img>
                         </div>
                         <div className="">
-                            <img  className="" src="https://bizweb.dktcdn.net/thumb/medium/100/472/947/products/sp1c.jpg?v=1670338561717"></img>
+                            <img  className="border hover:border-[#cd9a2b] transition-all duration-500 cursor-pointer"  src="https://bizweb.dktcdn.net/thumb/medium/100/472/947/products/sp1c.jpg?v=1670338561717"></img>
                         </div>
                         <div className="">
-                            <img className=" " src="https://bizweb.dktcdn.net/thumb/medium/100/472/947/products/sp2c.jpg?v=1670338561717"></img>
+                            <img className="border hover:border-[#cd9a2b] transition-all duration-500 cursor-pointer"  src="https://bizweb.dktcdn.net/thumb/medium/100/472/947/products/sp2c.jpg?v=1670338561717"></img>
                         </div>
                     </div>
                 </div>

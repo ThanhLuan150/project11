@@ -33,7 +33,7 @@ const Descripbe = ()=>{
             </div>}
             {showContent2 && <div>
                 <div className='border border-[#cd9a2b]  rounded-b-lg py-4 px-3 pb-7'>
-                    <div className='text-[14px] font-mono text-[#333] pb-3'>Liên hệ hotline:<a href='/' className='text-[#cd9a2b] font-medium'> 1900 6750</a> để nhận được ưu đãi đặt phòng sớm nhất !</div>
+                    <div className='text-[14px] font-mono text-[#333] pb-3'>Liên hệ hotline:<a href='/' className='text-[#cd9a2b] font-medium'> 0787628654</a> để nhận được ưu đãi đặt phòng sớm nhất !</div>
                     <div className='text-[18px] font-medium text-[#000000]'>CÁC TIỆN NGHI CỦA BEAN HOTEL</div>
                     <div className='md:grid md:grid-cols-2 grid grid-cols-1  pt-4 gap-4'>
                         <div className=''>

@@ -80,7 +80,7 @@ const Checkout = ()=>{
                 </div>
                 <div className="flex flex-row justify-between px-4 py-2">
                     <a  className="text-[14px] text-[#2a9dcc] font-medium "href="/Cart">Quay về giỏ hàng</a>
-                    <div className="bg-[#2a6395] w-max px-5 py-3 uppercase text-white text-[14px] font-medium rounded-lg hover:bg-white border hover:border-[#2a6395] hover:text-[#2a6395] transition-all duration-500">Đặc hàng</div>
+                    <div className="bg-[#2a6395] w-max px-5 py-3 uppercase text-white text-[14px] font-medium rounded-lg hover:bg-white border hover:border-[#2a6395] hover:text-[#2a6395] transition-all duration-500 cursor-pointer">Đặc hàng</div>
                 </div>
             </div>
         </div>

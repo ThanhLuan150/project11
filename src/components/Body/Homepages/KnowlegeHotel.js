@@ -4,7 +4,7 @@ const KnowledHotel= ()=>{
         <>
         <div className="my-5 xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]">
             <div className="flex flex-col test-center items-center">
-                <div className="text-[30px] uppercase  text-center hover:text-[#ffc107] transition-all duration-500 font-medium">Hiểu biết khách sạn</div>
+                <div className="text-[30px] uppercase  text-center hover:text-[#cd9a2b] cursor-pointer transition-all duration-500 font-bold">Hiểu biết khách sạn</div>
                 <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
                 <div className="w-[120px] border-[0.5px] border-gray-600"></div>
             </div>
@@ -15,7 +15,7 @@ const KnowledHotel= ()=>{
                     </div>
                     <div className="md:px-[20px] px-2">
                         <div className="relative  bottom-[50px] bg-[#f8f9fa] drop-shadow-md  rounded-lg w-full ">
-                            <div className="flex flex-col justify-center text-center items-center py-4 text-[22px] font-medium px-6 hover:text-[#ffc107] transition-all duration-500">
+                            <div className="flex flex-col justify-center text-center items-center py-4 text-[22px] font-medium px-6 hover:text-[#cd9a2b] cursor-pointer transition-all duration-500">
                                 10 xu hướng thịnh hành trong ngành khách sạn 2022
                             </div>
                             <div className="text-[16px] flex flex-col text-center justify-center items-center px-4 text-[#747474]">
@@ -37,7 +37,7 @@ const KnowledHotel= ()=>{
                     </div>
                     <div className="md:px-[20px] px-2">
                         <div className="relative bottom-[50px] bg-[#f8f9fa] drop-shadow-md  rounded-lg">
-                            <div className="flex flex-col justify-center text-center items-center py-4 text-[22px] font-medium px-6 hover:text-[#ffc107] transition-all duration-500">
+                            <div className="flex flex-col justify-center text-center items-center py-4 text-[22px] font-medium px-6 hover:text-[#cd9a2b] cursor-pointer transition-all duration-500">
                             Những điều kiêng kị khi ở khách sạn mà bạn nên biết
                             </div>
                             <div className="text-[16px] flex flex-col text-center justify-center items-center px-4 text-[#747474]">
@@ -59,7 +59,7 @@ const KnowledHotel= ()=>{
                     </div>
                     <div className="md:px-[20px] px-2">
                         <div className="relative bottom-[50px] bg-[#f8f9fa] drop-shadow-md  rounded-lg">
-                            <div className="flex flex-col justify-center text-center items-center py-4 text-[22px] font-medium px-6 hover:text-[#ffc107] transition-all duration-500">
+                            <div className="flex flex-col justify-center text-center items-center py-4 text-[22px] font-medium px-6 hover:text-[#cd9a2b] cursor-pointer transition-all duration-500">
                             Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng
                             </div>
                             <div className="text-[16px] flex flex-col text-center justify-center items-center px-4 text-[#747474]">

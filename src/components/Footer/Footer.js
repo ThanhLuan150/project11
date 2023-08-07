@@ -6,11 +6,11 @@ const Footer = ()=>{
             <div className="xl:grid xl:grid-cols-4 lg:grid  lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1  md:gap-1 gap-[100px]">
                 <div className="flex flex-col md:text-left text-center md:items-start md:justify-start">
                     <div className="text-white uppercase font-medium my-2"> HotLine Hỗ trợ </div>
-                    <div className="text-white uppercase font-medium md:mb-0  mb-10">0787628954</div>
+                    <div className="text-white uppercase font-medium md:mb-0  mb-10 hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">0787628954</div>
                 </div>
                 <div className="flex flex-col md:text-left text-center md:items-start md:justify-start">
                     <div className="text-white uppercase font-medium my-2">EMAIL HỖ TRỢ</div>
-                    <div className="text-white uppercase font-medium md:mb-0   mb-10">le@gmail.com</div>
+                    <div className="text-white font-medium md:mb-0   mb-10 hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">le@gmail.com</div>
                 </div>
                 <div className="flex flex-col md:text-left text-center md:items-start md:justify-start justify-center  items-center">
                     <div className="text-white uppercase font-medium  my-2">ĐĂNG KÝ NHẬN TIN</div>
@@ -61,7 +61,7 @@ const Footer = ()=>{
                                 </svg>
                                 </a>
                             </li>
-                            <li className="twitter">
+                            <li className="twitter text-white">
                                 <a href="#" title="Twitter" target="_blank" rel="nofollow">
                                 <svg className="w-[38px] h-[38px]" 
                                     xmlns="http://www.w3.org/2000/svg"
