@@ -22,7 +22,7 @@ const Cuisine = ()=>{
   };
     return (
         
-        <div className="my-5 xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]">
+        <div className="my-5 xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px] py-5">
             <div className="flex flex-col test-center items-center font-medium">
                 <div className="text-[30px] uppercase  text-center hover:text-[#ffc107] transition-all duration-500">Ẩm thực</div>
                 <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
@@ -140,7 +140,9 @@ const Cuisine = ()=>{
                     </div>
                 </div>
             </div>
-            <a href='/Food' className="bg-[#cd9a2b] text-[15px] flex justify-center uppercase  text-white w-max tracking-wider py-4 px-7 text-sm font-semibold cursor-pointer hover:bg-opacity-80 my-3">Xem thêm</a>
+            <div class="flex flex-row justify-center items-center"> 
+                <a href='/Food' className="bg-[#cd9a2b]  items-center text-[14px]  justify-center uppercase  text-white w-max py-2 px-5 font-mono cursor-pointer hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500 my-3">Xem thêm</a>
+            </div>
             </div>}
             {showContent2 && <div>
                 <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-7 gap-5">
@@ -245,7 +247,9 @@ const Cuisine = ()=>{
                     </div>
                 </div>
             </div>
-            <a href="/Fruit"className="bg-[#cd9a2b] text-[15px] flex justify-center uppercase  text-white w-max tracking-wider py-4 px-7 text-sm font-semibold cursor-pointer hover:bg-opacity-80 my-3">Xem thêm</a>
+            <div class="flex flex-row justify-center items-center"> 
+                <a href='/Food' className="bg-[#cd9a2b]  items-center text-[14px]  justify-center uppercase  text-white w-max py-2 px-5 font-mono cursor-pointer hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500 my-3">Xem thêm</a>
+            </div>
             </div>}
             {showContent3 && <div>
             <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-7 gap-5">
@@ -350,7 +354,9 @@ const Cuisine = ()=>{
                     </div>
                 </div>
             </div>
-            <a href='/Cake' className="bg-[#cd9a2b] text-[15px] flex justify-center uppercase  text-white w-max tracking-wider py-4 px-7 text-sm font-semibold cursor-pointer hover:bg-opacity-80 my-3">Xem thêm</a>
+            <div class="flex flex-row justify-center items-center"> 
+                <a href='/Food' className="bg-[#cd9a2b]  items-center text-[14px]  justify-center uppercase  text-white w-max py-2 px-5 font-mono cursor-pointer hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500 my-3">Xem thêm</a>
+            </div>
         </div>}
         </div>
 

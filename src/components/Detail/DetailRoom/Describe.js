@@ -15,14 +15,14 @@ const Descripbe = ()=>{
     return (
         
         <div className="my-5">
-            <div className="flex gap-2">
-                <div  className="bg-[#cd9a2b] flex justify-center py-2 px-3  items-end w-max text-white text-[18px] font-medium rounded-t-lg cursor-pointer" onClick={handleClick1}>Mô tả</div>
-                <div  className="bg-[#cd9a2b] flex justify-center py-2 px-3  items-end w-max text-white text-[18px] font-medium rounded-t-lg cursor-pointer" onClick={handleClick2}>Tiện nghi</div>
-    
-            </div>
+           <div className="flex gap-2">
+                <div
+                    className={`${showContent1? "bg-[#cd9a2b] text-white": "bg-white text-black"} flex justify-center py-2 px-3  items-end w-max text-[18px] font-medium rounded-t-lg cursor-pointer`}onClick={handleClick1}> Mô tả</div><div
+                    className={`${showContent2? "bg-[#cd9a2b] text-white": "bg-white text-black"} flex justify-center py-2 px-3  items-end w-max text-[18px] font-medium rounded-t-lg cursor-pointer`}onClick={handleClick2}> Tiện nghi</div>
+                </div>
             <div>
             {showContent1 && <div> 
-            <div className='border border-[#cd9a2b]  rounded-lg py-4 px-3 pb-7'>
+            <div className='border border-[#cd9a2b]  rounded-b-lg py-4 px-3 pb-7'>
                 <div className='text-[14px] text-[#333] font-mono'>Tiện nghi đầy đủ, chu đáo bao. Đảm bảo dịch vụ tốt nhất để quý khách có thể tận hưởng những tính năng tuyệt vời như wifi free,bãi đỗ xe....</div>
                 <div className='text-[14px] text-[#333] font-mono mt-4'>Có hệ thống nhà hàng hiện đại, phục vụ các món ăn Á – Âu được chế biến từ đội ngũ đầu bếp giàu kinh nghiệm. Quý khách sẽ được thưởng thức các món ăn đa dạng và phong phú.</div>
                 <div className='text-[14px] text-[#333] font-mono mt-4'><strong>Dịch vụ miễn phí:</strong> Ăn sáng tự chọn, Nước khoáng trên phòng nghỉ, Dịch Internet không dây (wifi)</div>
@@ -32,7 +32,7 @@ const Descripbe = ()=>{
             </div>
             </div>}
             {showContent2 && <div>
-                <div className='border border-[#cd9a2b]  rounded-lg py-4 px-3 pb-7'>
+                <div className='border border-[#cd9a2b]  rounded-b-lg py-4 px-3 pb-7'>
                     <div className='text-[14px] font-mono text-[#333] pb-3'>Liên hệ hotline:<a href='/' className='text-[#cd9a2b] font-medium'> 1900 6750</a> để nhận được ưu đãi đặt phòng sớm nhất !</div>
                     <div className='text-[18px] font-medium text-[#000000]'>CÁC TIỆN NGHI CỦA BEAN HOTEL</div>
                     <div className='md:grid md:grid-cols-2 grid grid-cols-1  pt-4 gap-4'>
