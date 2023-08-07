@@ -32,10 +32,10 @@ const SingleRoom = ()=>{
                 </div>
                 <div className="bg-white drop-shadow-md">
                     <div className="">
-                        <img className="w-full h-full " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/sp21.jpg?v=1670338576510"></img>
+                        <img className="w-full h-full cursor-pointer " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/sp21.jpg?v=1670338576510"></img>
                     </div>
                     <div className="flex flex-col text-center items-center my-2">
-                        <div className="uppercase text-[14px] font-medium my-1 hover:text-[#ffc107] transition-all duration-500">Phòng đơn view thành phố</div>
+                        <div className="uppercase text-[14px] font-medium my-1 cursor-pointer hover:text-[#cd9a2b] transition-all duration-500">Phòng đơn view thành phố</div>
                         <div className="flex items-center text-center gap-2 my-3">
                             <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029"></img>
                             <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
@@ -51,15 +51,15 @@ const SingleRoom = ()=>{
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-6" >
                         <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">700.000₫/Đêm</div>
-                        <div className="bg-[#c40025] text-[12px] justify-center uppercase text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
+                        <div className="bg-[#c40025] text-[12px] justify-center uppercase cursor-pointer text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
                     </div>
                 </div>
                 <div className="bg-white drop-shadow-md">
                     <div className="">
-                        <img className="w-full h-full " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh11a713f0cbaa54ea595b6bb5e1b.jpg?v=1670338575473"></img>
+                        <img className="w-full h-full cursor-pointer " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh11a713f0cbaa54ea595b6bb5e1b.jpg?v=1670338575473"></img>
                     </div>
                     <div className="flex flex-col text-center items-center my-2">
-                        <div className="uppercase text-[14px] font-medium my-1 hover:text-[#ffc107] transition-all duration-500">Phòng đơn view sân vườn</div>
+                        <div className="uppercase text-[14px] font-medium my-1 cursor-pointer hover:text-[#cd9a2b] transition-all duration-500">Phòng đơn view sân vườn</div>
                         <div className="flex items-center text-center gap-2 my-3">
                             <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029"></img>
                             <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
@@ -75,15 +75,15 @@ const SingleRoom = ()=>{
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-6" >
                         <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">800.000₫/Đêm</div>
-                        <div className="bg-[#c40025] text-[12px] justify-center uppercase text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
+                        <div className="bg-[#c40025] text-[12px] justify-center uppercase cursor-pointer text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
                     </div>
                 </div>
                 <div className="bg-white drop-shadow-md">
                     <div className="">
-                        <img className="w-full h-full " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh1eb6eb86adb63474a819ab595ee.jpg?v=1670338574237"></img>
+                        <img className="w-full h-full cursor-pointer" src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh1eb6eb86adb63474a819ab595ee.jpg?v=1670338574237"></img>
                     </div>
                     <div className="flex flex-col text-center items-center my-2">
-                        <div className="uppercase text-[14px] font-medium my-1 hover:text-[#ffc107] transition-all duration-500">Phòng đơn view biển</div>
+                        <div className="uppercase text-[14px] font-medium my-1 cursor-pointer hover:text-[#cd9a2b] transition-all duration-500">Phòng đơn view biển</div>
                         <div className="flex items-center text-center gap-2 my-3">
                             <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029"></img>
                             <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
@@ -99,7 +99,7 @@ const SingleRoom = ()=>{
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-6" >
                         <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">900.000₫/Đêm</div>
-                        <div className="bg-[#c40025] text-[12px] justify-center uppercase text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
+                        <div className="bg-[#c40025] text-[12px] justify-center uppercase cursor-pointer text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
                     </div>
                 </div>
             </div>
