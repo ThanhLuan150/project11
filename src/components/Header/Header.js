@@ -4,9 +4,9 @@ import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
 const Header = () => {
   let Links = [
     { name: "Trang chủ", link: "/" },
-    { name: "Về chúng tôi", link: "/Aboutus" },
-    { name: "Phòng", link: "/ListRoom" },
-    { name: "Ẩm thực", link: "/ListCuisine" },
+    { name: "Về chúng tôi", link: "/About-us" },
+    { name: "Phòng", link: "/List-room" },
+    { name: "Ẩm thực", link: "/List-cuisine" },
     { name: "Dịch vụ", link: "/Service" },
   ];
   let [open, setOpen] = useState(false);
@@ -15,7 +15,7 @@ const Header = () => {
     <div className='shadow-md w-full fixed top-0 left-0 z-20'>
       <div className='lg:flex items-center justify-between bg-white py-4 lg:px-10 px-5'>
         <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-          <span>Bean Hotel</span>
+          <a href='/'>Bean Hotel</a>
         </div>
         <div onClick={() => setOpen(!open)} className='absolute right-8 top-6 cursor-pointer lg:hidden w-7 h-7'>
           {open ? <XMarkIcon /> : <Bars3BottomRightIcon />}

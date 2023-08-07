@@ -9,7 +9,7 @@ const DouleRoom = ()=>{
             <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-7 gap-5">
                <div className="bg-white drop-shadow-md">
                     <div className="">
-                        <a href="/DetailRoom"><img className="w-full h-full cursor-pointer " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh12082233010354fb2894f5b1193.jpg?v=1670338573270"></img></a>
+                        <a href="/Detail-room"><img className="w-full h-full cursor-pointer " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh12082233010354fb2894f5b1193.jpg?v=1670338573270"></img></a>
                     </div>
                     <div className="flex flex-col text-center items-center my-2">
                         <div className="uppercase text-[14px] font-medium my-1 cursor-pointer hover:text-[#cd9a2b] transition-all duration-500">Phòng đôi tiêu chuẩn</div>
