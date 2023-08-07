@@ -25,7 +25,7 @@ function App() {
     <Route path="/" element={<Homepage />} />
     <Route path="/Login" element={<Login />} />
     <Route path="/Register" element={<Register />} />
-    <Route path="/Aboutus" element={<Aboutus />} />
+    <Route path="/About-us" element={<Aboutus />} />
     <Route path="/Service" element={<Dichvu />} />
     <Route path="/Cake" element={<Cake />} />
     <Route path="/Food" element={<Food/>} />
@@ -33,10 +33,10 @@ function App() {
     <Route path="/Single" element={<Single/>} />
     <Route path="/Double" element={<Double/>} />
     <Route path="/Vip" element={<Vip/>} />
-    <Route path="/ListRoom" element={<ListRoom/>} />
-    <Route path="/ListCuisine" element={<ListCuisine/>} />
-    <Route path="/DetailRoom" element={<DetailRoom/>} />
-    <Route path="/DetailFood" element={<DetailFood/>} />
+    <Route path="/List-room" element={<ListRoom/>} />
+    <Route path="/List-cuisine" element={<ListCuisine/>} />
+    <Route path="/Detail-room" element={<DetailRoom/>} />
+    <Route path="/Detail-food" element={<DetailFood/>} />
     <Route path="/Cart" element={<Cart/>}></Route>
     <Route path="/Checkout" element={<Checkout/>}></Route>
   </Routes>    

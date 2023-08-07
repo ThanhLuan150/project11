@@ -38,7 +38,7 @@ const Cuisine = ()=>{
             <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-7 gap-5">
                <div className="bg-white drop-shadow-md relative group">
                     <div className="">
-                        <a href='/DetailFood'><img className="w-full h-full cursor-pointer" src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/sp3c.jpg?v=1670338561717"></img></a>
+                        <a href='/Detail-food'><img className="w-full h-full cursor-pointer" src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/sp3c.jpg?v=1670338561717"></img></a>
                     </div>
                     <a href="#" alt="luanle" className='flex flex-row ' >
                         <a href='#' class="ml-2 absolute w-[50px] h-[50px] rounded-full bg-[#dc3545] py-2 px-3 top-1 left-2 mt-3 text-center font-semibold text-white hidden group-hover:block group-hover:animate-fadeIn align-middle leading-9 text-sm transition-all duration-500">20%</a>
