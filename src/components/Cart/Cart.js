@@ -5,7 +5,7 @@ const Cart = ()=>{
         <>
         <Header/>
         <div className="pt-[60px]">
-            <div className="bg-[#f5f5f5] py-3 ">
+            <div className="bg-[#f5f5f5] py-3 lg:py-3 lg:mt-3  ">
             <span className="mx-2 text-[#333] text-[14px] font-mono hover:text-[#cd9a2b] transition-all duration-500 "><a href="/">Trang chủ</a></span>
                 <i className="fa-solid fa-chevron-right mx-2" ></i>
                 <span className="mx-2 text-[#333] text-[14px] font-mono hover:text-[#cd9a2b] transition-all duration-500 "><a href="/" >Giỏ hàng</a></span>
@@ -50,7 +50,7 @@ const Cart = ()=>{
                 <div className="text-[#323c42] text-[15px] font-medium uppercase">Tổng tiền</div>
                 <div className="basis-1/6 text-[14px] font-bold text-[#e8002d]">40.000₫</div>
             </div>
-            <div className="lg:flex lg:flex-row flex flex-col justify-between text-center py-3 gap-3">
+            <div className="lg:flex lg:flex-row sm:flex sm:flex-col flex flex-col justify-between text-center py-3 gap-3">
                 <a href="/" className="md:px-24 px-18 py-3 bg-black text-white uppercase text-[14px] xl:w-[50%] w-full font-mono rounded-lg hover:border hover:border-black hover:bg-white hover:text-black transition-all duration-500">Tiếp tục mua hàng</a>
                 <a href="/Checkout" className="px-24 py-3 bg-[#cd9a2b] text-[14px]  uppercase font-mono xl:w-[50%] w-full text-white rounded-lg hover:border hover:border-[#cd9a2b] hover:bg-white hover:text-[#cd9a2b] transition-all duration-500">Thanh toán</a>
             </div>

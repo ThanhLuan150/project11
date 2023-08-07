@@ -4,8 +4,8 @@ const Fruit = ()=>{
     return (
         <>
         <Header/>
-        <div className="pt-[100px]">
-            <div className="bg-[#f5f5f5] py-3 ">
+        <div className="pt-[60px]">
+            <div className="bg-[#f5f5f5] py-3 lg:py-3 lg:mt-3  ">
                 <span className="mx-2 text-[#333] text-[14px] font-mono"><a href="/">Trang chủ</a></span>
                 <i className="fa-solid fa-chevron-right mx-2" ></i>
                 <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="#" >Đồ uống</a></span>
