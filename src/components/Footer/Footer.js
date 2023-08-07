@@ -6,11 +6,11 @@ const Footer = ()=>{
             <div className="xl:grid xl:grid-cols-4 lg:grid  lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1  md:gap-1 gap-[100px]">
                 <div className="flex flex-col md:text-left text-center md:items-start md:justify-start">
                     <div className="text-white uppercase font-medium my-2"> HotLine Hỗ trợ </div>
-                    <div className="text-white uppercase font-medium md:mb-0  mb-10 hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">0787628954</div>
+                    <a href="tel:0787628654" className="text-white uppercase font-medium md:mb-0  mb-10 hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">0787628954</a>
                 </div>
                 <div className="flex flex-col md:text-left text-center md:items-start md:justify-start">
                     <div className="text-white uppercase font-medium my-2">EMAIL HỖ TRỢ</div>
-                    <div className="text-white font-medium md:mb-0   mb-10 hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">le@gmail.com</div>
+                    <a href="mailto:letruongthanhluan1505@gmail.com" className="text-white font-medium md:mb-0   mb-10 hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">letruongthanhluan1505@gmail.com</a>
                 </div>
                 <div className="flex flex-col md:text-left text-center md:items-start md:justify-start justify-center  items-center">
                     <div className="text-white uppercase font-medium  my-2">ĐĂNG KÝ NHẬN TIN</div>
