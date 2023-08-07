@@ -4,8 +4,8 @@ const Roomsimilartothebestroom  = ()=>{
         <>
         <div className="xl:flex xl:flex-row flex flex-col gap-5 w-full h-full pb-9">
             <div className="basis-4/6 w-full h-full">
-            <div className="bg-[#cd9a2b] flex justify-center py-2 px-3  items-end w-max text-white text-[18px] font-medium rounded-t-lg">Phòng tương tự</div>
-                <div className="border border-[#cd9a2b] rounded-lg px-3 ">
+            <a  href ="/"className="bg-[#cd9a2b] flex justify-center py-2 px-3 border-b-0 items-end w-max text-white text-[18px] font-bold rounded-t-lg hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500">Phòng tương tự</a>
+                <div className="border border-[#cd9a2b]  px-3 rounded-r-lg ">
                     <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-3 gap-5 ">
                         <div className="bg-white drop-shadow-md">
                             <div className="">
@@ -18,7 +18,7 @@ const Roomsimilartothebestroom  = ()=>{
                                     <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
                                     <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1685581511029"></img>
                                     <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1685581511029"></img>
-                                    <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1685581511029"></img>>
+                                    <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1685581511029"></img>
                                 </div>
                                 <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
                                 <div className="w-[120px] border-[0.5px] border-gray-600"></div>
@@ -86,8 +86,8 @@ const Roomsimilartothebestroom  = ()=>{
                 </div>
             </div>
             <div className="basis-2/6 w-full  h-full">
-            <div className="bg-[#cd9a2b] flex justify-center py-2 px-3  items-end w-max text-white text-[18px] font-medium rounded-t-lg">Phòng tốt nhất</div>
-                <div className="border border-[#cd9a2b] rounded-lg py-3 px-3">
+            <a href="/" className="bg-[#cd9a2b] flex justify-center py-2 px-3 border-b-0 items-end w-max text-white text-[18px] font-bold rounded-t-lg hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500">Phòng tốt nhất</a>
+                <div className="border border-[#cd9a2b] rounded-r-lg py-3 px-3">
                     <div className="lg:flex lg:flex-col  md:grid md:grid-cols-2flex flex-col">
                     <div className="flex flex-row gap-2">
                         <div className="basis-2/6">

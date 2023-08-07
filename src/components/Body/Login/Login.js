@@ -2,7 +2,7 @@ const Login = ()=>{
     return(
         <div className="">
             <div className="bg-[#f5f5f5] py-3 ">
-                <span className="mx-2 text-[#333] text-[14px] font-mono"><a href="/">Trang chủ</a></span>
+                <span className="mx-2 text-[#333] text-[14px] font-mono hover:text-[#cd9a2b] transition-all duration-500"><a href="/">Trang chủ</a></span>
                 <i className="fa-solid fa-chevron-right mx-2" ></i>
                 <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="#" >Đăng nhập tài khoản</a></span>
             </div>
@@ -21,7 +21,7 @@ const Login = ()=>{
                                 <input className="border border-[#e1e1e1] box-shadow outline-none py-2 w-full pl-4 placeholder:text-[14px] placeholder:text-[#333] placeholder:font-mono" type="password"name="" placeholder="ConfilmPassword" ></input>
                             </div>
                             <div className="px-2 pb-3 ">
-                                <button type="button" className="w-full h-full text-center items-center py-3 pb-4 bg-[#cd9a2b] rounded-lg border hover:border-[#cd9a2b] hover:bg-white transition duration-500 hover:text-[#cd9a2b] uppercase text-white text-[14px]  font-mono">Đăng nhập</button>
+                                <button type="button" className="w-full h-full text-center items-center py-3 pb-3 bg-[#cd9a2b] rounded-lg border hover:border-[#cd9a2b] hover:bg-white transition duration-500 hover:text-[#cd9a2b] uppercase text-white text-[14px]  font-mono">Đăng nhập</button>
                             </div>
                             <div className="flex flex-row justify-between px-2 pb-5">
                                 <a href="/ForgetPassword"className="text-[14px] text-[#333] font-mono ">Quên mật khẩu</a>

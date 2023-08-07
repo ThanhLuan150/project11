@@ -4,53 +4,90 @@ const MaybeyoulikeRelatedproducts = ()=>{
         <>
         <div className="xl:flex xl:flex-row flex flex-col gap-5 w-full h-full pb-9">
             <div className="basis-4/6 w-full h-full">
-                <div className="bg-[#cd9a2b] flex justify-center py-2 px-3  items-end w-max text-white text-[18px] font-medium rounded-t-lg">Phòng tương tự</div>
-                <div className="border border-[#cd9a2b] rounded-lg px-3 ">
+            <a  href ="/"className="bg-[#cd9a2b] flex justify-center py-2 px-3 border-b-0 items-end w-max text-white text-[18px] font-bold rounded-t-lg hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500">Phòng tương tự</a>
+                <div className="border border-[#cd9a2b]  px-3 rounded-r-lg ">
                     <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-3 gap-5 ">
-                        <div className="bg-white drop-shadow-md relative group">
+                        <div className="bg-white drop-shadow-md">
                             <div className="">
-                                <a href='/DetailFood'><img className="w-full h-full " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/sp3c.jpg?v=1670338561717"></img></a>
+                                <img className="w-full h-full " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh11ccbd4ad859c41ff9fda9cdd73.jpg?v=1670338572250"></img>
                             </div>
-                            <a href="#" alt="luanle" className='flex flex-row ' >
-                            <a href='#' class="ml-2 absolute w-[50px] h-[50px] rounded-full bg-[#dc3545] py-2 px-3 top-1 left-2 mt-3 text-center font-semibold text-white hidden group-hover:block group-hover:animate-fadeIn align-middle leading-9 text-sm transition-all duration-500">20%</a>
-                            <a href='#' class=" mt-3 mr-3 absolute  bg-[#ffc107] rounded-full py-2 px-2 w-[50px] h-[50px] top-1 right-1 text-center font-semibold  hidden group-hover:block group-hover:animate-fadeIn"><img class="ml-1 mt-1" src='https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029'></img></a></a>
-                    <div className="flex flex-col text-left items-left my-2 mx-3">
-                        <div className="uppercase text-[14px] font-medium my-1 hover:text-[#ffc107] transition-all duration-500">Mì xào bò</div>
-                        <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">80.000đ <del className='text-[#98a4a9] text-[14px]'>100.000đ</del></div>
-                    </div>
-                </div>
-                <div className="bg-white drop-shadow-md relative group">
-                    <div className="">
-                        <img className="w-full h-full  " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/sp2.jpg?v=1670338560503"></img>
-                    </div>
-                    <a href="#" alt="luanle" className='flex flex-row ' >
-                        <a href='#' class="ml-2 absolute w-[50px] h-[50px] rounded-full bg-[#dc3545] py-2 px-3 top-1 left-2 mt-3 text-center font-semibold text-white hidden group-hover:block group-hover:animate-fadeIn align-middle leading-9 text-sm transition-all duration-500">-17%</a>
-                        <a href='#' class=" mt-3 mr-3 absolute  bg-[#ffc107] rounded-full py-2 px-2 w-[50px] h-[50px] top-1 right-1 text-center font-semibold  hidden group-hover:block group-hover:animate-fadeIn"><img class="ml-1 mt-1" src='https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029'></img></a>
-                    </a>
-                    <div className="flex flex-col text-left items-left my-2 mx-3">
-                        <div className="uppercase text-[14px] font-medium my-1 hover:text-[#ffc107] transition-all duration-500">Bún xào thịt heo</div>
-                        <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">75.000đ <del className='text-[#98a4a9] text-[14px]'>90.000đ</del></div>
-                    </div>
-                </div>
-                <div className="bg-white drop-shadow-md relative group">
-                    <div className="">
-                        <img className="w-full h-full  " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/1.jpg?v=1670338559480"></img>
-                    </div>
-                    <a href="#" alt="luanle" className='flex flex-row ' >
-                        <a href='#' class="ml-2 absolute w-[50px] h-[50px] rounded-full bg-[#dc3545] py-2 px-3 top-1 left-2 mt-3 text-center font-semibold text-white hidden group-hover:block group-hover:animate-fadeIn align-middle leading-9 text-sm transition-all duration-500">-5%</a>
-                        <a href='#' class=" mt-3 mr-3 absolute  bg-[#ffc107] rounded-full py-2 px-2 w-[50px] h-[50px] top-1 right-1 text-center font-semibold  hidden group-hover:block group-hover:animate-fadeIn"><img class="ml-1 mt-1" src='https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029'></img></a>
-                    </a>
-                    <div className="flex flex-col text-left items-left my-2 mx-3">
-                        <div className="uppercase text-[14px] font-medium my-1 hover:text-[#ffc107] transition-all duration-500">Bún bò huế</div>
-                        <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">95.000đ <del className='text-[#98a4a9] text-[14px]'>100.000đ</del></div>
-                    </div>
-                </div>
+                            <div className="flex flex-col text-center items-center my-2">
+                                <div className="uppercase text-[14px] font-medium my-1 hover:text-[#ffc107] transition-all duration-500">Phòng đôi view thành phố</div>
+                                <div className="flex items-center text-center gap-2 my-3">
+                                <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029"></img>
+                                    <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
+                                    <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1685581511029"></img>
+                                    <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1685581511029"></img>
+                                    <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1685581511029"></img>
+                                </div>
+                                <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
+                                <div className="w-[120px] border-[0.5px] border-gray-600"></div>
+                                <div className="flex text-center gap-3 text-sm">
+                                    <div>02 Khách </div>
+                                    <div>30m²</div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-6" >
+                                <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">1.100.000₫/Đêm</div>
+                                <div className="bg-[#c40025] text-[12px] justify-center uppercase text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
+                            </div>
+                        </div>
+                        <div className="bg-white drop-shadow-md">
+                            <div className="">
+                                <img className="w-full h-full " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh1ada4b333e71e42408487c48089.jpg?v=1670338570513"></img>
+                            </div>
+                            <div className="flex flex-col text-center items-center my-2">
+                                <div className="uppercase text-[14px] font-medium my-1 hover:text-[#ffc107] transition-all duration-500">Phòng đôi view sân vườn</div>
+                                <div className="flex items-center text-center gap-2 my-3">
+                                    <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029"></img>
+                                    <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
+                                    <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1685581511029"></img>
+                                    <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1685581511029"></img>
+                                    <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1685581511029"></img>
+                                </div>
+                                <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
+                                <div className="w-[120px] border-[0.5px] border-gray-600"></div>
+                                <div className="flex text-center gap-3 text-sm">
+                                    <div>02 Khách </div>
+                                    <div>30m²</div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-6" >
+                                <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">1.200.000₫/Đêm</div>
+                                <div className="bg-[#c40025] text-[12px] justify-center uppercase text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
+                            </div>
+                        </div>
+                        <div className="bg-white drop-shadow-md">
+                            <div className="">
+                                <img className="w-full h-full " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh1120e24401b1a4fb7b5535ae97a.jpg?v=1670338569467"></img>
+                            </div>
+                            <div className="flex flex-col text-center items-center my-2">
+                                <div className="uppercase text-[14px] font-medium my-1 hover:text-[#ffc107] transition-all duration-500">Phòng đôi view biển</div>
+                                <div className="flex items-center text-center gap-2 my-3">
+                                    <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029"></img>
+                                    <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
+                                    <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1685581511029"></img>
+                                    <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1685581511029"></img>
+                                    <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1685581511029"></img>
+                                </div>
+                                <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
+                                <div className="w-[120px] border-[0.5px] border-gray-600"></div>
+                                <div className="flex text-center gap-3 text-sm">
+                                    <div>04 Khách </div>
+                                    <div>32m²</div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-3" >
+                                <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">1.500.000₫/Đêm</div>
+                                <div className="bg-[#c40025] text-[12px] justify-center uppercase text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="basis-2/6 w-full  h-full">
-            <div className="bg-[#cd9a2b] flex justify-center py-2 px-3  items-end w-max text-white text-[18px] font-medium rounded-t-lg">Phòng tốt nhất</div>
-                <div className="border border-[#cd9a2b] rounded-lg py-3 px-3">
+            <a href="/" className="bg-[#cd9a2b] flex justify-center py-2 px-3 border-b-0 items-end w-max text-white text-[18px] font-bold rounded-t-lg hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500">Phòng tốt nhất</a>
+                <div className="border border-[#cd9a2b] rounded-r-lg py-3 px-3">
                     <div className="lg:flex lg:flex-col  md:grid md:grid-cols-2flex flex-col">
                     <div className="flex flex-row gap-2">
                         <div className="basis-2/6">

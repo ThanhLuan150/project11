@@ -26,7 +26,7 @@ const KnowledHotel= ()=>{
                                 <div className="text-[#323c42] text-[14px]">06/12/2022</div>
                             </div>
                             <div className="flex justify-center items-end pb-3">
-                                <a href="#" class="bg-[#cd9a2b] text-white py-3 px-3 ">Đọc thêm</a>
+                                <a href="#" class="bg-[#cd9a2b] text-white py-2 pb-3  px-3  hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500">Đọc thêm</a>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const KnowledHotel= ()=>{
                                 <div className="text-[#323c42] text-[14px]">06/12/2022</div>
                             </div>
                             <div className="flex justify-center items-end pb-3">
-                                <a href="#" class="bg-[#cd9a2b] text-white py-3 px-3 ">Đọc thêm</a>
+                                <a href="#" class="bg-[#cd9a2b] text-white py-2 pb-3  px-3  hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500">Đọc thêm</a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ const KnowledHotel= ()=>{
                                 <div className="text-[#323c42] text-[14px]">06/12/2022</div>
                             </div>
                             <div className="flex justify-center items-end pb-3">
-                                <a href="#" class="bg-[#cd9a2b] text-white py-3 px-3 ">Đọc thêm</a>
+                                <a href="#" class="bg-[#cd9a2b] text-white py-2 pb-3  px-3  hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500">Đọc thêm</a>
                             </div>
                         </div>
                     </div>

@@ -6,9 +6,10 @@ const Cart = ()=>{
         <Header/>
         <div className="pt-[60px]">
             <div className="bg-[#f5f5f5] py-3 ">
-                <span className="mx-2 text-[#333] text-[14px] font-mono"><a href="/">Trang chủ</a></span>
+            <span className="mx-2 text-[#333] text-[14px] font-mono hover:text-[#cd9a2b] transition-all duration-500 "><a href="/">Trang chủ</a></span>
                 <i className="fa-solid fa-chevron-right mx-2" ></i>
-                <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="/Double" >Giỏ hàng của bạn</a></span>
+                <span className="mx-2 text-[#333] text-[14px] font-mono hover:text-[#cd9a2b] transition-all duration-500 "><a href="/" >Giỏ hàng</a></span>
+                <i className="fa-solid fa-chevron-right mx-2" ></i>
             </div>
         </div>
         <div className="xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]  my-8">
