@@ -27,8 +27,8 @@ const Header = () => {
             </li>
           ))}
           <div className='flex lg:gap-0 gap-2'>
-            <a href="/Cart" className='btn bg-[#cd9a2b] text-white lg:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Giỏ hàng</a>
-            <a href="/Login" className='btn bg-[#cd9a2b] text-white lg:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Đăng nhập</a>
+            <a href="/Cart" className='btn bg-[#cd9a2b] text-white lg:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b]'>Giỏ hàng</a>
+            <a href="/Login" className='btn bg-[#cd9a2b] text-white lg:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static  hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b]'>Đăng nhập</a>
           </div>
         </ul>
       </div>

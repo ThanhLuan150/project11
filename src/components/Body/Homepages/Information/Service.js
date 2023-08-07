@@ -24,8 +24,8 @@ const Service = () => {
 
   return (
     <div className='bg-[#f8f9fa] py-6 '>
-    <div className="my-5 xl:mx-[100px] mx-[10px] ">
-        <div className="flex  sm:gap-10 gap-5 text-center items-center justify-center my-7 text-[17px] ">
+    <div className="my-5 xl:mx-[100px] mx-[2px] ">
+        <div className="flex  sm:gap-10 gap-5 text-center items-center justify-center my-7  sm:text-[17px] text-[15px] ">
             <div className="uppercase font-medium tqd-top-menu-item tqd-top-menu-item-active " onClick={handleClick1}><img className='mx-7' src='https://bizweb.dktcdn.net/thumb/small/100/472/947/themes/888072/assets/cutlery.png?1685581511029'></img> Khách sạn</div>
             <div className="uppercase font-medium tqd-top-menu-item tqd-top-menu-item-active " onClick={handleClick2}><img className='mx-7' src='https://bizweb.dktcdn.net/thumb/small/100/472/947/themes/888072/assets/meeting.png?1685581511029'></img>Phòng họp</div>
             <div className="uppercase font-medium tqd-top-menu-item tqd-top-menu-item-active "onClick={handleClick3}><img className='mx-7' src='https://bizweb.dktcdn.net/thumb/small/100/472/947/themes/888072/assets/skin-care.png?1685581511029'></img>Làm đẹp</div>

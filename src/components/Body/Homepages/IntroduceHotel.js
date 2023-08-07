@@ -2,7 +2,7 @@ const IntroduceHotel = ()=>{
     return(
         <>
         <div className="xl:mx-[100px] lg:mx-[30px]  xl:my-[30px] mx-0 my-[10px] lg:grid lg:grid-cols-2 grid grid-cols-1 ">
-            <div className="lg:mx-0 md:mx-[50px] mx-[10px] lg:my-4 my-3" >
+            <div className="lg:mx-0 md:mx-[50px] mx-[2px] lg:my-4 my-3" >
                 <img className="w-full h-full     " img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/about.jpg?1685581511029"></img>
             </div>
             <div className="2xl:mx-16 2xl:my-16  xl:mx-14 xl:my-14 lg:mx-12 lg:my-12 md:mx-14 md:my-10 mx-[10px]  my-3">
