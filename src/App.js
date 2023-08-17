@@ -17,6 +17,7 @@ import DetailRoom from "./components/Detail/DetailRoom/DetailRoom";
 import DetailFood from "./components/Detail/DetailFood/DetailFood";
 import Cart from "./components/Cart/Cart";
 import Checkout from "./components/Checkout/Checkout";
+import VerifyAccount from "./components/Body/VerifyAccount/VerifyAccount";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <Routes>
     <Route path="/" element={<Homepage />} />
     <Route path="/Login" element={<Login />} />
+    <Route path="/VerifyAccount" element={<VerifyAccount />} />
     <Route path="/Register" element={<Register />} />
     <Route path="/About-us" element={<Aboutus />} />
     <Route path="/Service" element={<Dichvu />} />

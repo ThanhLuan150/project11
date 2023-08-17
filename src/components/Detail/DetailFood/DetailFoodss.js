@@ -7,17 +7,6 @@ const DetailFoodss= ()=>{
                     <div className="">
                         <img className="w-full h-full border hover:border-[#cd9a2b] transition-all duration-500 cursor-pointer" src="https://bizweb.dktcdn.net/100/472/947/products/sp3c.jpg?v=1670338561717"></img>
                     </div>
-                    <div className="flex flex-row gap-2 lg:pr-[200px] pr-[100px] py-3 m-auto">
-                        <div className="">
-                            <img className="border hover:border-[#cd9a2b] transition-all duration-500 cursor-pointer" src="https://bizweb.dktcdn.net/thumb/medium/100/472/947/products/sp3c.jpg?v=1670338561717"></img>
-                        </div>
-                        <div className="">
-                            <img  className="border hover:border-[#cd9a2b] transition-all duration-500 cursor-pointer"  src="https://bizweb.dktcdn.net/thumb/medium/100/472/947/products/sp1c.jpg?v=1670338561717"></img>
-                        </div>
-                        <div className="">
-                            <img className="border hover:border-[#cd9a2b] transition-all duration-500 cursor-pointer"  src="https://bizweb.dktcdn.net/thumb/medium/100/472/947/products/sp2c.jpg?v=1670338561717"></img>
-                        </div>
-                    </div>
                 </div>
                 <div  className="basis-3/6">
                     <div className="text-[26px] text-[#323c42] font-medium">Mì Xào Bò</div>
