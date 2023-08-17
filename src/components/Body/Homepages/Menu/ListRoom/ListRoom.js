@@ -4,8 +4,8 @@ const ListRoom = ()=>{
     return (
         <>
         <Header/>
-        <div className="pt-[60px]">
-            <div className="bg-[#f5f5f5] py-3 ">
+        <div className="md:pt-[65px] pt-[60px]">
+            <div className="bg-[#f5f5f5] lg:py-4 lg:pt-6 py-3 pt-2 ">
                <span className="mx-2 text-[#333] text-[14px] font-mono hover:text-[#cd9a2b] transition-all duration-500"><a href="/">Trang chủ</a></span>
                 <i className="fa-solid fa-chevron-right mx-2" ></i>
                 <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="/List-room" >Phòng</a></span>
