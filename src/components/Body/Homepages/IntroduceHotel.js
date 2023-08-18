@@ -11,7 +11,7 @@ const IntroduceHotel = ()=>{
                     <div className="text-[22px] my-2">Giới thiệu về chúng tôi</div>
                 </div>
                 <div className="text-[14px] font-mono">Là khách sạn 5 sao đẳng cấp quốc tế, tọa lạc tại giao điểm của bốn quận chính, nơi được xem như trái tim và trung tâm của TP. Hồ Chí Minh. Với hệ thống phòng tiêu chuẩn và phòng hạng sang thiết kế đẹp mắt và trang nhã được chú trọng tới từng chi tiết sẽ đem lại sự tiện nghi và thoải mái tối đa cho quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến công tác....</div>
-                <div className="bg-[#cd9a2b] text-[14px] font-mono flex justify-center   text-white w-max  py-3 px-8 cursor-pointer hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] my-3 transition-all duration-500">Xem thêm</div>
+                <a href="/About-us" className="bg-[#cd9a2b] text-[14px] font-mono flex justify-center   text-white w-max  py-3 px-8 cursor-pointer hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] my-3 transition-all duration-500">Xem thêm</a>
             </div>
         </div>
         </>
