@@ -20,8 +20,8 @@ const Cakes =() =>{
              <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-7 gap-5">
                 {typeFoods.map((food, index) => (
                <div className="bg-white drop-shadow-md relative group">
-                    <div className="">
-                        <a href='/'><img className="w-full h-full cursor-pointer" src={`../Image/Cake/${food.image_foods}`}  alt=""></img></a>
+                     <div className="">
+                        <a href={`/Detail-food/${food.id_foods}`}><img className="w-full h-full cursor-pointer" src={`../Image/Cake/${food.image_foods}`}  alt=""></img></a>
                     </div>
                     <a href="#" alt="luanle" className='flex flex-row ' >
                         {food.Discount_code && (

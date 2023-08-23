@@ -1,0 +1,259 @@
+
+.header {
+    position: fixed;
+    font-family: Verdana, Tahoma, sans-serif;
+    display: flex;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.header .ul-nav .li-nav {
+    text-align: center;
+    font-size: 14px;
+    padding: 1rem;
+}
+
+.header .ul-nav .li-nav a:hover {
+    color: #cd9a2b;
+    transition: all;
+    transition-duration: 500ms;
+    
+}
+.header .ul-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+
+.header .ul-nav .li-nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header .ul-nav .li-nav:hover #type-movies {
+    display: block;
+    list-style-type:none;
+    color:#333;
+    font-size:13px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    border-left:1px solid #cd9a2b;
+    transition: all;
+    animation-duration: 500ms;
+}
+.header .ul-nav .li-nav:hover #type-food {
+    display: block;
+    list-style-type:none;
+    color:#333;
+    font-size:13px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    border-left:1px solid #cd9a2b;
+    transition: all;
+    animation-duration: 500ms;
+}
+
+
+.header.menu.active {
+    display: block;
+}
+
+.header #type-movies {
+    /* display: inline-block; */
+    position: absolute;
+    left: -3rem;
+    top: -0.5rem;
+    display: none;
+    margin-top: 3.95rem;
+}
+.header #type-food {
+    /* display: inline-block; */
+    position: absolute;
+    left: -3rem;
+    top: -0.5rem;
+    display: none;
+    margin-top: 3.95rem;
+}
+
+.movie_card{
+    margin-top: 1rem;
+    position: absolute;
+    width: 20rem;
+    background-color: #fff;
+}
+
+
+#checkbox{
+    display: none;
+}
+#checkbox1{
+    display: none;
+}
+#checkbox2{
+    display: none;
+}
+.li-drop{
+    background-color: #fff;
+    
+ }
+.search{
+    border:1px solid #cd9a2b;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    #checkbox {
+            display: none;
+    }
+    .header .ul-nav .li-nav {
+       display: block;
+       font-weight: 600;
+    }
+    .header .ul-nav .li-nav {
+        text-align: center;
+        font-size: 13px;
+        padding: 1rem;
+    }
+    .firstnav{
+        margin-top: 3.5rem;
+    }
+    .header .ul-nav .li-nav{
+       padding: 0rem;
+       text-align:start;
+       margin-left: 50px;
+    }
+   
+    
+    .header .ul-nav {
+        width: 80%;
+        top: 5.2rem;
+        height: 100vh;
+        background-color: #fff;
+        right: -100%;
+        position: absolute;
+        display: block;
+        margin: 0;
+        padding: 0;
+        /* left: 0; */
+        transition: all 0.8s;
+        font-weight: 700px;
+    }
+    
+   
+    .header .ul-nav .li-nav:hover #type-movies {
+        display: none;
+    }
+    .header .ul-nav .li-nav:hover #type-food {
+        display: none;
+    }
+
+    .check-btn-res{
+        position: absolute;
+        font-size: 30px;
+        color: #000000;
+        right: 7%;
+        transition: 0.5s;
+    }
+    #checkbox:checked ~.ul-nav {
+        right: 0;
+    }
+
+    #checkbox:checked~.check-btn-res {
+        transform: rotate(90deg);
+        transition: 0.5s;
+    }
+
+    .li-drop{
+        background-color: unset;
+        padding: 0;
+        margin: 5px 0 0;
+   }
+    .search_site{
+        top: 1rem;
+        position: absolute;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+    }
+    .auth{
+        position: absolute;
+        top: 11rem;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+    }
+
+    #checkbox1 {
+        display: none;
+      }
+      .header .ul-nav .li-nav .li-drop {
+        display: none;
+      }
+      .header .ul-nav .li-nav  .li-drop {
+        display: block;
+        font-weight: 600;
+      }
+      .check-btn-res1 {
+        position: absolute;
+        font-size: 18px;
+        color: #000000;
+        right: 7%;
+        transition: 0.5s;
+      }
+      #checkbox1:checked ~ #type-movies {
+        display: block;
+      }
+      #checkbox1:checked ~ .check-btn-res1 {
+        transform: rotate(90deg);
+        transition: 0.5s;
+      }
+    /* ... (existing styles) ... */
+
+#checkbox2 {
+    display: none;
+  }
+  .header .ul-nav .li-nav .li-drop {
+    display: none;
+  }
+  .header .ul-nav .li-nav .li-drop {
+    display: block;
+    font-weight: 600;
+  }
+  .check-btn-res2 {
+    position: absolute;
+    font-size: 18px;
+    color: #000000;
+    right: 7%;
+    transition: 0.5s;
+  }
+  #checkbox2:checked ~ #type-food{
+    display: block;
+  }
+  #checkbox2:checked ~ .check-btn-res2 {
+    transform: rotate(90deg);
+    transition: 0.5s;
+  }
+  
+      
+}
+
+@media (min-width: 1200px){
+    .check-btn-res{
+        display: none;
+    }
+    .check-btn-res1{
+        display: none;
+    }
+    .check-btn-res2{
+        display: none;
+    }
+}

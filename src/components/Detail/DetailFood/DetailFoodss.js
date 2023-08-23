@@ -1,18 +1,43 @@
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 const DetailFoodss= ()=>{ 
+    const [food, setFood] = useState(null);
+    const {  id_foods } = useParams();
+    console.log(id_foods)
+    console.log('food'+food)
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const foodResponse = await axios.get(
+            `http://127.0.0.1:8000/api/food/${id_foods}`
+          );
+          setFood(foodResponse.data);
+        } catch (error) {
+          console.error(error);
+        }
+      };
+  
+      fetchData();
+    }, [id_foods]);
+   
+    if (!food) {
+      return <p>Loading...</p>;
+    }
     return(
         
     
             <div className="md:flex md:flex-row flex flex-col gap-5 py-6">
                 <div className="basis-3/6">
                     <div className="">
-                        <img className="w-full h-full border hover:border-[#cd9a2b] transition-all duration-500 cursor-pointer" src="https://bizweb.dktcdn.net/100/472/947/products/sp3c.jpg?v=1670338561717"></img>
+                        <img className="w-full h-full border hover:border-[#cd9a2b] transition-all duration-500 cursor-pointer"  src={`../Image/Foods/${food.image_foods}`}></img>
                     </div>
                 </div>
                 <div  className="basis-3/6">
-                    <div className="text-[26px] text-[#323c42] font-medium">Mì Xào Bò</div>
-                    <div className="text-[22px] text-[#dc3545] font-medium my-1">80.000₫ <del className="text-[#ACACAC] text-[16px] font-mono">100.000₫</del></div> 
+                    <div className="text-[26px] text-[#323c42] font-medium">{food.name_foods}</div>
+                    <div className="text-[22px] text-[#dc3545] font-medium my-1">{food.discount_price} <del className="text-[#ACACAC] text-[16px] font-mono">{food.cost_price}</del></div> 
                     <div className="border border-[#ddd] my-3"></div>
-                    <div className="text-[#333] text-[14px] font-mono">Đĩa mì xào thơm ngon nóng hổi sẽ cung cấp bữa sáng tuyệt vời, đầy đủ dinh dưỡng, năng lượng cho một ngày dài. Sự hòa quyện vị ngọt tự nhiên của rau củ, thịt và gia vị sẽ giúp món mì thêm đậm đà, đượm vị.</div>
+                    <div className="text-[#333] text-[14px] font-mono">{food.discription_food}</div>
                     <div className="border border-[#ddd] my-3"></div>
                     <div className="flex md:gap-2 gap-1 flex-row py-2">
                         <div className="basis-1/6 flex flex-row">

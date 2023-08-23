@@ -1,57 +1,15 @@
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import DetailBooking from "./DetailBooking";
 import Descripbe from "./Describe";
 import Roomsimilartothebestroom from "./Roomsimilartothebestroom";
 const DetailRoom = ()=>{ 
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 2,
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-            }
-          }
-        ]
-      };
-    
-    
+  
     return(
         <>
         <Header/>
-        <div className="md:pt-[65px] pt-[60px]">
-            <div className="bg-[#f5f5f5] lg:py-4 lg:pt-6 py-3 pt-2 ">
-                <span className="mx-2 text-[#333] text-[14px] font-mono hover:text-[#cd9a2b] transition-all duration-500 "><a href="/">Trang chủ</a></span>
-                <i className="fa-solid fa-chevron-right mx-2" ></i>
-                <span className="mx-2 text-[#333] text-[14px] font-mono hover:text-[#cd9a2b] transition-all duration-500 "><a href="/" >Phòng đơn</a></span>
-                <i className="fa-solid fa-chevron-right mx-2" ></i>
-                <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="" >Phòng đôi tiêu chuẩn</a></span>
-            </div>
-        </div>
-        <div className="xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]" >
-          <div className=" py-5" >
-            <Slider {...settings}>
-                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh12082233010354fb2894f5b1193.jpg?v=1670338573270" alt="" className="w-[664px] h-[350px]  pr-2 cursor-pointer" />
-                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh2a207ea102d484b3486f4582e6d.jpg?v=1670338573270" alt="" className="w-[664px] h-[350px]  pr-2 cursor-pointer" />
-                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh2a207ea102d484b3486f4582e6d.jpg?v=1670338573270" alt=""className=" w-[664px] h-[350px]  pr-2 cursor-pointer" />
-                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/472/947/products/anh3.jpg?v=1670338577307" alt="" className=" w-[664px] h-[350px]  pr-2 cursor-pointer" />
-              </Slider>
-          </div>
-          <DetailBooking/>
+        <div className="xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px] md:pt-[65px] pt-[60px]" >
+          <DetailBooking />
           <Descripbe/>
           <Roomsimilartothebestroom/>
         </div>

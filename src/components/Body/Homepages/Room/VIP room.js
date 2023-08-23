@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 const VipRoom = () => {
     const [typeRooms, setTypeRooms] = useState([]);
     const id_categori_room = 3; // Thay thế bằng ID thực mà bạn muốn tìm nạp
@@ -27,7 +27,9 @@ const VipRoom = () => {
             {typeRooms.map((room, index) => (
                 <div className="bg-white drop-shadow-md" key={index}>
                     <div className="">
-                        <a href='/'><img className="w-full h-full cursor-pointer" src={`../Image/Rooms/${room.image_rooms}`}  alt=""></img></a>
+                        <Link to={`/Detail-room/${room.id_rooms}`}>
+                            <img className="w-full h-full cursor-pointer" src={`../Image/Rooms/${room.image_rooms}`} alt="" />
+                        </Link>
                     </div>
                     <div className="flex flex-col text-center items-center my-2">
                         <div className="uppercase text-[14px] font-medium my-1 cursor-pointer hover:text-[#cd9a2b] transition-all duration-500">{room.rooms_name}</div>

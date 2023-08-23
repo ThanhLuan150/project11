@@ -21,7 +21,7 @@ const Fruits =() =>{
                 {typeFoods.map((food, index) => (
                <div className="bg-white drop-shadow-md relative group">
                     <div className="">
-                        <a href='/'><img className="w-full h-full cursor-pointer" src={`../Image/Foods/${food.image_foods}`}  alt=""></img></a>
+                        <a href={`/Detail-food/${food.id_foods}`}><img className="w-full h-full cursor-pointer" src={`../Image/Foods/${food.image_foods}`}  alt=""></img></a>
                     </div>
                     <a href="#" alt="luanle" className='flex flex-row ' >
                         {food.Discount_code && (
