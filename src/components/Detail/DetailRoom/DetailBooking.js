@@ -1,63 +1,124 @@
-const DetailBooking = ()=>{ 
+import React, { useState, useEffect } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
+
+const DetailBooking = () => {
+    const [room, setRoom] = useState(null);
+    const { id_rooms } = useParams();
+    
+    // Define the function that fetches the data from API
+    const fetchData = async () => {
+        try {
+            const response = await axios.get(`http://127.0.0.1:8000/api/room/${id_rooms}`);
+            setRoom(response.data);
+        } catch (error) {
+            console.error("Error fetching room:", error);
+        }
+    };
+
+    // Trigger the fetchData after the initial render by using the useEffect hook
+    useEffect(() => {
+        fetchData();
+    }, [id_rooms]);
+
+    // Check if room data is still loading
+    if (!room) {
+        return <p>Loading...</p>;
+    }
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+  console.log()
     return(
         
         <>
+        
+        <div className=" py-5" >
+            <Slider {...settings}>
+                  <img  src={`../../Image/Rooms/${room.image_rooms}`} alt="" className="w-[664px] h-[350px]  pr-2 cursor-pointer" />
+                  <img  src={`../../Image/Rooms/${room.image_rooms}`} alt="" className="w-[664px] h-[350px]  pr-2 cursor-pointer" />
+                  <img  src={`../../Image/Rooms/${room.image_rooms}`} alt="" className="w-[664px] h-[350px]  pr-2 cursor-pointer" />
+                  <img  src={`../../Image/Rooms/${room.image_rooms}`} alt="" className="w-[664px] h-[350px]  pr-2 cursor-pointer" />
+              </Slider>
+          </div>
         <div className="lg:flex lg:flex-row gap-5 flex flex-col">
             <div className="basis-4/6">
-                <div className="text-[22px] font-medium text-[#323C42] hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">Phòng đôi tiêu chuẩn</div>
+                <div className="text-[22px] font-medium text-[#323C42] hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">{room.rooms_name}</div>
                 <div className=" md:grid md:grid-cols-3  grid grid-cols-2 border border-[#cd9a2b] rounded-lg   md:gap-3 gap-0 md:px-3 px-2 py-4">
                     <div className="basis-2/6 flex gap-3 ">
                         <div className="basic-3/6">
-                            <img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/people.png?1685581511029" className="w-[26px] h-[26px]"></img>
+                            <img src={`../../Image/room_services/${room.old_people_information_image}`} className="w-[26px] h-[26px]"></img>
                         </div>
-                        <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">02 Người lớn</div>
+                        <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">{room.old_people_information_name}</div>
                     </div>
                     <div className="basis-2/6 flex gap-3 ">
                         <div className="basic-3/6">
-                            <img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/people.png?1685581511029" className="w-[26px] h-[26px]"></img>
+                            <img src={`../../Image/room_services/${room.young_people_information_image}`} className="w-[26px] h-[26px]"></img>
                         </div>
-                        <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">01 Trẻ em</div>
+                        <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">{room.young_people_information_name}</div>
                     </div>
                     <div className="basis-2/6 flex gap-3  md:pt-0 pt-3">
                         <div className="basic-3/6">
-                            <img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/metter.png?1685581511029" className="w-[26px] h-[26px]"></img>
-                            </div>
-                        <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">Phòng 20m²</div>
+                            <img src={`../../Image/room_services/${room.acreage_information_image}`} className="w-[26px] h-[26px]"></img>
+                        </div>
+                        <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">{room.acreage_information_name}</div>
                     </div>
                 </div>
-                <div className="font-mono text-[14px] text-[#323c42] mt-4 pb-5">Các phòng trang nhã và dãy phòng trang nghiêm của chúng tôi gợi nhớ về một thời đại đã qua. Mỗi tính năng như đường cong, thảm sang trọng, trần nhà cao, phòng tắm lát đá cẩm thạch, thiết bị làm sạch và nhiều không gian đều được bố trí một cách chu đáo để gọi cho riêng bạn. Tông màu nâu phong phú và gỗ sồi tự nhiên tạo nên những khu bảo tồn yên tĩnh và yên tĩnh, được tôn lên một cách tuyệt vời bởi đồ nội thất trang nhã.</div>
+                <div className="font-mono text-[14px] text-[#323c42] mt-4 pb-5">{room.description}</div>
                 <div className="">
                     <div className="bg-[#cd9a2b] flex justify-center py-2 px-3 border-b-0 items-end w-max text-white text-[18px] font-bold rounded-t-lg hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] transition-all duration-500 cursor-pointer">Dịch vụ phòng</div>
                     <div className=" md:grid md:grid-cols-3  grid grid-cols-2 border border-[#cd9a2b] rounded-r-lg  md:gap-3 gap-0 md:px-3 px-2 py-4">
                         <div className="basis-2/6 flex gap-3 ">
                             <div className="basic-3/6">
-                                <img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029" className="w-[26px] h-[26px]"></img>
+                                <img src={`../../Image/room_services/${room.coffee_room_services_image}`} className="w-[26px] h-[26px]"></img>
                             </div>
-                            <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">Cafe Buổi Sáng</div>
+                            <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">{room.coffee_room_services_name}</div>
                         </div>
                         <div className="basis-2/6 flex gap-3 ">
                             <div className="basic-3/6">
-                                <img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029" className="w-[26px] h-[26px]"></img>
+                                <img  src={`../../Image/room_services/${room.call_room_services_image}`}  className="w-[26px] h-[26px]"></img>
                             </div>
-                            <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">Gọi Đồ Ăn Tại Phòng</div>
+                            <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">{room.call_room_services_name}</div>
                         </div>
                         <div className="basis-2/6 flex gap-3  md:pt-0 pt-3">
                             <div className="basic-3/6">
-                                <img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1685581511029" className="w-[26px] h-[26px]"></img>
+                                <img src={`../../Image/room_services/${room.kitchen_room_services_image}`}  className="w-[26px] h-[26px]"></img>
                             </div>
-                            <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">Bếp Nấu Tại Phòng</div>
+                            <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">{room.kitchen_room_services_name}</div>
                         </div>
                         <div className="basis-2/6 flex gap-3 pt-3">
                             <div className="basic-3/6">
-                                <img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1685581511029" className="w-[26px] h-[26px]"></img>
+                                <img src={`../../Image/room_services/${room.bathtub_room_services_image}`}  className="w-[26px] h-[26px]"></img>
                             </div>
-                            <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">Bồn Tắm Hoa Sen</div>
+                            <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">{room.bathtub_room_services_name}</div>
                         </div>
                         <div className="basis-2/6 flex gap-3 pt-3">
                             <div className="basic-3/6">
-                                <img src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1685581511029" className="w-[26px] h-[26px]"></img>
+                                <img src={`../../Image/room_services/${room.internet_room_services_image}`} className="w-[26px] h-[26px]"></img>
                             </div>
-                            <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">Internet Không Dây</div>
+                            <div className="basic-3/6 md:text-[18px] text-[14px] text-[#323C42] font-mono">{room.internet_room_services_name}</div>
                         </div>
                     </div>
                 </div>

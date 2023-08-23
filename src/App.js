@@ -37,8 +37,8 @@ function App() {
     <Route path="/Vip" element={<Vip/>} />
     <Route path="/List-room" element={<ListRoom/>} />
     <Route path="/List-cuisine" element={<ListCuisine/>} />
-    <Route path="/Detail-room" element={<DetailRoom/>} />
-    <Route path="/Detail-food" element={<DetailFood/>} />
+    <Route path="/Detail-room/:id_rooms" element={<DetailRoom />} />
+    <Route path="/Detail-food/:id_foods" element={<DetailFood/>} />
     <Route path="/Cart" element={<Cart/>}></Route>
     <Route path="/Checkout" element={<Checkout/>}></Route>
   </Routes>    
