@@ -19,7 +19,7 @@ const VipRoom = () => {
     return(
         <div className=" xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px]">
             <div className="flex flex-col test-center items-center">
-                <a href="/Double" className="text-[30px] uppercase  text-center hover:text-[#cd9a2b] transition-all duration-500 font-bold">Phòng Vip</a>
+                <a href="/Vip" className="text-[30px] uppercase  text-center hover:text-[#cd9a2b] transition-all duration-500 font-bold">Phòng Vip</a>
                 <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
                 <div className="w-[120px] border-[0.5px] border-gray-600"></div>
             </div>

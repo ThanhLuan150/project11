@@ -1,19 +1,36 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 import Header from "../../../../Header/Header";
 import Footer from "../../../../Footer/Footer";
 const Double = ()=>{
+    const [typeRooms, setTypeRooms] = useState([]);
+    const id_categori_room = 2; // Thay thế bằng ID thực mà bạn muốn tìm nạp
+
+    useEffect(() => {
+       // Lấy dữ liệu bằng cách sử dụng id_categori_room được cung cấp
+        axios.get(`http://127.0.0.1:8000/api/type-rooms/${id_categori_room}`)
+            .then(response => {
+                setTypeRooms(response.data.type_rooms);
+            })
+            .catch(error => {
+                console.error('Lỗi khi tải dữ liệu:', error);
+            });
+    }, [id_categori_room]); // Đảm bảo bao gồm id_categori_room trong mảng phụ thuộc
+
     return (
         <>
         <Header/>
-        <div className="pt-[100px]">
-            <div className="bg-[#f5f5f5] py-3 ">
+        <div className="md:pt-[65px] pt-[60px]">
+            <div className="bg-[#f5f5f5] lg:py-4 lg:pt-6 py-3 pt-2 ">
                 <span className="mx-2 text-[#333] text-[14px] font-mono"><a href="/">Trang chủ</a></span>
                 <i className="fa-solid fa-chevron-right mx-2" ></i>
-                <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="/Double" >Phòng đôi</a></span>
+                <span className="mx-2 text-[#915b10] text-[14px] font-mono"><a href="#" >Phòng đôi</a></span>
             </div>
         </div>
         <div className="xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px] my-8">
             <div className="flex flex-row justify-between bg-[#f5f5f5] w-full py-3 px-3 rounded-lg">
-                <div className="text-[16px] font-bold uppercase">Phòng đôi</div>
+                <div className="text-[16px] font-bold uppercase font-medium">Phòng đơn</div>
                 <div className="flex gap-3">
                     <div className="flex gap-2 ">
                         <div>
@@ -31,107 +48,35 @@ const Double = ()=>{
                 </div>
             </div>
             <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1  my-7 gap-5">
-               <div className="bg-white drop-shadow-md">
-                    <div className="">
-                        <img className="w-full h-full cursor-pointer" src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh12082233010354fb2894f5b1193.jpg?v=1670338573270"></img>
+            {typeRooms.map((room, index) => (
+                <div className="bg-white drop-shadow-md" key={index}>
+                   <div className="">
+                        <Link to={`/Detail-room/${room.id_rooms}`}>
+                            <img className="w-full h-full cursor-pointer" src={`../Image/Rooms/${room.image_rooms}`} alt="" />
+                        </Link>
                     </div>
                     <div className="flex flex-col text-center items-center my-2">
-                        <div className="uppercase text-[14px] font-medium my-1 cursor-pointer hover:text-[#cd9a2b] transition-all duration-500">Phòng đôi tiêu chuẩn</div>
+                        <div className="uppercase text-[14px] font-medium my-1 cursor-pointer hover:text-[#cd9a2b] transition-all duration-500">{room.rooms_name}</div>
                         <div className="flex items-center text-center gap-2 my-3">
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029"></img>
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1685581511029"></img>
-                            <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1685581511029"></img>
-                            <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1685581511029"></img>
+                            <img className="w-[32] h-[32px]" src={`../Image/room_services/${room.coffee_room_services_image}`}></img>
+                            <img className="w-[32] h-[32px]" src={`../Image/room_services/${room.call_room_services_image}`}></img>
+                            <img className="w-[32] h-[32px]" src={`../Image/room_services/${room.kitchen_room_services_image}`}></img>
+                            <img className="w-[32] h-[32px]" src={`../Image/room_services/${room.bathtub_room_services_image}`}></img>
+                            <img className="w-[32] h-[32px]" src={`../Image/room_services/${room.internet_room_services_image}`}></img>
                         </div>
-                        <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
-                        <div className="w-[120px] border-[0.5px] border-gray-600"></div>
-                        <div className="flex text-center gap-3 text-sm">
-                            <div>02 Khách </div>
-                            <div>25m²</div>
+                        <div className="flex text-center  gap-3 text-sm">
+                            <div>{room.old_people_information_name}</div>
+                            <div>{room.young_people_information_name}</div>
+                            <div>{room.acreage_information_name}</div>
                         </div>
                     </div>
-                    <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-6" >
-                        <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">950.000₫/Đêm</div>
-                        <div className="bg-[#c40025] text-[12px] justify-center uppercase cursor-pointer text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
+                    <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-6">
+                        <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">{room.price_rooms}₫/Đêm</div>
+                        <a href='/' className="bg-[#c40025] text-[12px] justify-center uppercase cursor-pointer text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</a>
                     </div>
                 </div>
-                <div className="bg-white drop-shadow-md">
-                    <div className="">
-                        <img className="w-full h-full cursor-pointer" src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh11ccbd4ad859c41ff9fda9cdd73.jpg?v=1670338572250"></img>
-                    </div>
-                    <div className="flex flex-col text-center items-center my-2">
-                        <div className="uppercase text-[14px] font-medium my-1 cursor-pointer hover:text-[#cd9a2b] transition-all duration-500">Phòng đôi view thành phố</div>
-                        <div className="flex items-center text-center gap-2 my-3">
-                        <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029"></img>
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1685581511029"></img>
-                            <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1685581511029"></img>
-                            <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1685581511029"></img>
-                        </div>
-                        <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
-                        <div className="w-[120px] border-[0.5px] border-gray-600"></div>
-                        <div className="flex text-center gap-3 text-sm">
-                            <div>02 Khách </div>
-                            <div>30m²</div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-6" >
-                        <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">1.100.000₫/Đêm</div>
-                        <div className="bg-[#c40025] text-[12px] justify-center uppercase cursor-pointer text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
-                    </div>
-                </div>
-                <div className="bg-white drop-shadow-md">
-                    <div className="">
-                        <img className="w-full h-full cursor-pointer" src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh1ada4b333e71e42408487c48089.jpg?v=1670338570513"></img>
-                    </div>
-                    <div className="flex flex-col text-center items-center my-2">
-                        <div className="uppercase text-[14px] font-medium my-1 cursor-pointer hover:text-[#cd9a2b] transition-all duration-500">Phòng đôi view sân vườn</div>
-                        <div className="flex items-center text-center gap-2 my-3">
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029"></img>
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1685581511029"></img>
-                            <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1685581511029"></img>
-                            <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1685581511029"></img>
-                        </div>
-                        <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
-                        <div className="w-[120px] border-[0.5px] border-gray-600"></div>
-                        <div className="flex text-center gap-3 text-sm">
-                            <div>02 Khách </div>
-                            <div>30m²</div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-6" >
-                        <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">1.200.000₫/Đêm</div>
-                        <div className="bg-[#c40025] text-[12px] justify-center uppercase cursor-pointer text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
-                    </div>
-                </div>
-                <div className="bg-white drop-shadow-md">
-                    <div className="">
-                        <img className="w-full h-full cursor-pointer " src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh1120e24401b1a4fb7b5535ae97a.jpg?v=1670338569467"></img>
-                    </div>
-                    <div className="flex flex-col text-center items-center my-2">
-                        <div className="uppercase text-[14px] font-medium my-1 cursor-pointer hover:text-[#cd9a2b] transition-all duration-500">Phòng đôi view biển</div>
-                        <div className="flex items-center text-center gap-2 my-3">
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1685581511029"></img>
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1685581511029"></img>
-                            <img className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1685581511029"></img>
-                            <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1685581511029"></img>
-                            <img  className="w-[32] h-[32px]" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1685581511029"></img>
-                        </div>
-                        <div className="w-[120px] border-[0.5px] border-gray-600 mb-[1px]"></div>
-                        <div className="w-[120px] border-[0.5px] border-gray-600"></div>
-                        <div className="flex text-center gap-3 text-sm">
-                            <div>04 Khách </div>
-                            <div>32m²</div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col xl:flex-row justify-between items-center xl:mx-5 xl:my-5 mx-4 my-6" >
-                        <div className=" text-[#c40025] font-medium 2xl:text-[16px] text-[14px] ">1.500.000₫/Đêm</div>
-                        <div className="bg-[#c40025] text-[12px] justify-center uppercase cursor-pointer text-white w-max tracking-wider py-2 px-3 my-3 hover:bg-white hover:border-[#dc3545] border hover:text-[#dc3545] transition-all duration-500">Đặt phòng</div>
-                    </div>
-                </div>
-            </div>
+            ))}
+        </div>
         </div>
         <Footer/>
         </>
