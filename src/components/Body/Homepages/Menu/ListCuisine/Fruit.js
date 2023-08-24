@@ -29,7 +29,7 @@ const Fruit = ()=>{
         </div>
         <div className="xl:mx-[100px] lg:mx-[30px] md:mx-[20px] mx-[10px] my-8">
             <div className="flex flex-row justify-between bg-[#f5f5f5] w-full py-3 px-3 rounded-lg">
-                <div className="text-[16px] font-bold uppercase">Món ăn</div>
+                <div className="text-[16px] font-bold uppercase">Đồ uống</div>
                 <div className="flex gap-3">
                     <div className="flex gap-2 ">
                         <div>
