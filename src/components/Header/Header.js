@@ -1,15 +1,51 @@
-import React, { useState } from 'react';
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Header = () => {
-  let Links = [
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [name, setName] = useState('');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+      axios.get('http://127.0.0.1:8000/api/users')
+        .then(response => {
+          const { id_users,  name } = response.data;
+          setName(name);
+          setIsLoggedIn(true);
+          localStorage.setItem('user_id', id_users);
+        })
+        .catch(error => {
+          console.error(error);
+          setIsLoggedIn(false);
+        });
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('email');
+    localStorage.removeItem('id_users');
+    setIsLoggedIn(false);
+    alert('Logged out successfully');
+    navigate('/');
+  };
+
+  const Links = [
     { name: "Trang chủ", link: "/" },
     { name: "Về chúng tôi", link: "/About-us" },
     { name: "Phòng", link: "/List-room" },
     { name: "Ẩm thực", link: "/List-cuisine" },
     { name: "Dịch vụ", link: "/Service" },
   ];
-  let [open, setOpen] = useState(false);
+
+  const [open, setOpen] = useState(false);
 
   return (
     <div className='shadow-md w-full fixed top-0 left-0 z-20'>
@@ -27,8 +63,17 @@ const Header = () => {
             </li>
           ))}
           <div className='flex lg:gap-0 gap-2'>
+            {isLoggedIn ? (
+              <>
+                <a href='/Profile'className='lg:ml-8 font-semibold text-gray-800'>{name}</a>
+                <button onClick={handleLogout} className='btn bg-[#cd9a2b] text-white lg:ml-8 font-semibold px-3 py-2 rounded-md duration-500 md:static hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] w-max'>Đăng xuất</button>
+              </>
+            ) : (
+              <>
+                <a href="/Login" className='btn bg-[#cd9a2b] text-white lg:ml-8 font-semibold px-3 py-2 pb-3 rounded-md duration-500 md:static  hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] w-max'>Đăng nhập</a>
+              </>
+            )}
             <a href="/Cart" className='btn bg-[#cd9a2b] text-white lg:ml-8 font-semibold px-3 py-2 rounded-md duration-500 md:static hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] w-max'>Giỏ hàng</a>
-            <a href="/Login" className='btn bg-[#cd9a2b] text-white lg:ml-8 font-semibold px-3 py-2 pb-3 rounded-md duration-500 md:static  hover:bg-white border hover:border-[#cd9a2b] hover:text-[#cd9a2b] w-max'>Đăng nhập</a>
           </div>
         </ul>
       </div>
