@@ -23,6 +23,7 @@ const Login = ()=>{
           email,
           password,
         });
+        console(email)
   
         const { token, id_users, role } = response.data;
   
@@ -45,9 +46,7 @@ const Login = ()=>{
         alert('Đăng nhập thành công');
         if (role) {
           navigate('/');
-        } else {
-          navigate('/Show');
-        }
+        } 
       } catch (error) {
         console.error(error);
         setError('Đăng nhập thất bại. Vui lòng kiểm tra thông tin đăng nhập.');
